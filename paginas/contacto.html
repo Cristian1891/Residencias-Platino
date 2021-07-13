@@ -5,26 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
 	<title>Contacto Platino</title>
 </head>
 <body>
 	<div id="cabecera">
-        <header id="header" class="fixed-top">
+        <header id="header" class="fixed-top bgColorBlack">
             <div class="container">
         
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="../index.html" class="scrollto"><img src="../media/residencias.png" alt="" class="img-fluid"></a>
+                <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="" class="img-fluid"></a>
             </div>
         
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="../index.html#nosotros">Nosotros</a></li>
-                        <li><a href="#">Agentes</a></li>
+                        
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#propiedades">Propiedades</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#propiedades">Propiedades</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/propiedades.html">Casas</a></li>
                             <li><a href="../paginas/propiedades.html">Departamentos</a></li>
                             <li><a href="../paginas/propiedades.html">Condominios</a></li>
@@ -33,8 +34,8 @@
                             </ul>
                         </li>          
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#servicios">Servicios</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#servicios">Servicios</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="../paginas/servicios.html#Tasaciones">
@@ -47,10 +48,11 @@
                                 Geología</a></li></li>
                             </ul>
                         </li>         
+
+                        <li><a href="../index.html#agentes">Agentes</a></li>
                 
-                
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#blog.html">Blog</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#blog">Blog</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/blog.html">Conocer Mas</a></li>
                             </ul>
                         </li>   
@@ -64,35 +66,39 @@
         </header>
     </div>
     <div class="contacto">
-        <h2 class="typeR bold">Contacto</h2>
-        <div class="cont-contacto seccion contenido-centrado ">
+        <h2 class="typeR bold colorBlack">Contacto</h2>
+        <div class="cont-pagContacto">
             <img src="../media/destacada3.jpg" alt="destacada3">
-            <h3 class="typeR bold">Llene el formulario de Contacto</h3>
-            <form class="contacto" method="POST" enctype="multipart/form-data">
-                <fieldset>
-                    <legend class="typeOs semiBold colorBlack">Información Personal</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Tu Nombre">
+            <h3 class="typeR bold colorBlack">Llene el formulario de Contacto</h3>
+            <form class="cont-form" action="../paginas/recibe.html" method="POST" enctype="multipart/form-data">
+                <fieldset class="border border-dark px-3 pt-2 pb-4 my-5">
+                    <legend class="typeOs semiBold colorBlack w-auto">Información Personal</legend>
+                    <label class="pt-0" for="nombre">Nombre:</label>
+                    <input class="border border-light rounded p-2" type="text" 
+                    placeholder="Tu Nombre" autocomplete="off" required>
 
                     <label for="nombre">Apellido:</label>
-                    <input type="text" id="nombre" placeholder="Tu Apellido">
+                    <input class="border border-light rounded p-2" type="text" 
+                    placeholder="Tu Apellido" autocomplete="off" required>
 
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+                    <input class="border border-light rounded p-2" type="tel" 
+                    placeholder="Tu Teléfono" autocomplete="off" required>
 
                     <label for="email">E-mail: </label>
-                    <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+                    <input class="border border-light rounded p-2" type="email"
+                    placeholder="Tu Correo electrónico" autocomplete="off" required>
 
                     <label for="mensaje">Mensaje: </label>
-                    <textarea  id="mensaje"></textarea>
+                    <textarea class="border border-light rounded" placeholder="Tu Mensaje" required></textarea>
 
                 </fieldset>
                     
 
-                <fieldset>
-                    <legend class="typeOs semiBold colorBlack">Información sobre Propiedad</legend>
+                <fieldset class="border border-dark px-3 pt-2 pb-4 my-5">
+                    <legend class="typeOs semiBold colorBlack w-auto">Información sobre Propiedad</legend>
                     <label for="opciones">Operación:</label>
-                    <select id="opciones">
+                    <select id="opciones" class="border border-light rounded p-2">
                         <option value="" disabled selected>-- Seleccione --</option>
                         <option value="Compra">Compra</option>
                         <option value="Venta">Venta</option>
@@ -100,29 +106,30 @@
                     </select>
 
                     <label for="cantidad">Precio:</label>
-                    <input type="number" min="0" max="1000000" step="50000">
+                    <input class="border border-light rounded p-2" type="number" min="0" max="1000000" 
+                    step="50000">
 
-                    <p class="typeOs colorBlack">Como desea ser Contactado:</p>
+                    <p class="typeOs colorBlack pt-3">Como desea ser Contactado:</p>
 
-                    <div class="forma-contacto">
-                        <label for="telefono">Teléfono</label>
-                        <input type="radio" name="contacto" value="telefono" id="telefono">
+                    <div class="forma-contacto pb-3">
+                        <label class="pt-0" for="telefono">Teléfono</label>
+                        <input type="radio" name="contacto" value="telefono">
 
-                        <label for="correo">E-mail</label>
-                        <input type="radio" name="contacto" value="correo" id="correo">
+                        <label class="pt-0" for="correo">E-mail</label>
+                        <input type="radio" name="contacto" value="correo">
                     </div>
 
-                    <p class="typeOs colorBlack">Si eligió Teléfono, elija la fecha y la hora</p>
-                    <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha">
+                    <p class="typeOs colorBlack">Si eligió Teléfono, elija la fecha y la hora:</p>
+                    <label class="pt-0" for="fecha">Fecha:</label>
+                    <input class="border border-light rounded p-2" type="date" id="fecha">
 
                     <label for="hora">Hora:</label>
-                    <input type="time" id="hora" min="09:00" max="18:00">
+                    <input class="border border-light rounded p-2" type="time" id="hora" min="09:00" max="18:00">
 
                 </fieldset>
 
-                <input type="submit" value="Enviar" class="boton1 bgColorRed colorWhite espaciof">
-                <input type="reset" name="resetear" value="Borrar todo" class="boton1 bgColorRed colorWhite espaciof">
+                <input type="submit" name="sube_form" value="Enviar" class="boton1 bgColorRed colorWhite mr-3">
+                <input type="reset" name="resetear" value="Borrar todo" class="boton1 bgColorRed colorWhite ml-2">
 
             </form>
         </div>
@@ -168,7 +175,7 @@
     </div>
 
     <script src="../bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script> 
 
 </body>
 </html>

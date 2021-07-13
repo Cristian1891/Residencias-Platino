@@ -13,25 +13,25 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Residencias Platino</title>
     <link rel="icon" href="media/logo.png">
+    <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="cabecera">
-        <header id="header" class="fixed-top">
+        <header id="header" class="fixed-top bgColorBlack">
             <div class="container">
         
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="index.html" class="scrollto"><img src="media/residencias.png" alt="" class="img-fluid"></a>
+                <a href="index.html"><img src="media/residencias.svg" alt="" class="img-fluid"></a>
             </div>
         
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
-                        <li class="active"><a href="#nosotros">NOSOTROS</a></li>
-                        <li><a href="#">AGENTES</a></li>
+                        <li class="active"><a href="#nosotros">Nosotros</a></li>
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="#propiedades">PROPIEDADES</a>
-                            <ul>
+                        <li class="drop-down"><a href="#propiedades">Propiedades</a>
+                            <ul class="mt-2">
                             <li><a href="paginas/propiedades.html">Casas</a></li>
                             <li><a href="paginas/propiedades.html">Departamentos</a></li>
                             <li><a href="paginas/propiedades.html">Condominios</a></li>
@@ -39,9 +39,9 @@
                         
                             </ul>
                         </li>          
-                
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="#servicios">SERVICIOS</a>
-                            <ul>
+
+                        <li class="drop-down"><a href="#servicios">Servicios</a>
+                            <ul class="mt-2">
                             <li><a href="paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="paginas/servicios.html#Tasaciones">
@@ -53,18 +53,18 @@
                             <li><a href="paginas/servicios.html#Geologia">
                                 Geología</a></li></li>
                             </ul>
-                        </li>         
+                        </li>  
+
+                        <li><a href="#agentes">Agentes</a></li>
                 
-                
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="#blog">BLOG</a>
-                            <ul>
+                        <li class="drop-down"><a href="#blog">Blog</a>
+                            <ul class="mt-2">
                             <li><a href="paginas/blog.html">Conocer Mas</a></li>
                             </ul>
-                        </li>   
-                
+                        </li>  
+                        
                         <li ><a href="#contacto">Contacto</a></li>
                     
-            
                     </ul>
                 </nav>  
             </div>
@@ -117,21 +117,21 @@
         </div>
     </div>
     <div id="propiedades">
-        <div id="contProp" class="typeOs semiBold">
+        <div class="contProp typeOs semiBold">
     	    <h2 class="typeR bold colorWhite">Propiedades</h2>
             <ul class="secciones">
-                <li><a href="#" class="boton1 colorWhite bgColorRed" id="btnClick">Casas</a></li>
-                <li><a href="#" class="boton1 bgColorBlack colorRed" id="btnClick1">Departamentos</a></li>
-                <li><a href="#" class="boton1 bgColorBlack colorRed" id="btnClick2">Condominios
+                <li><a href="#casas" class="boton1 colorWhite bgColorRed" id="btnClick">Casas</a></li>
+                <li><a href="#departamentos" class="boton1 bgColorBlack colorRed" id="btnClick1">Departamentos</a></li>
+                <li><a href="#condominios" class="boton1 bgColorBlack colorRed" id="btnClick2">Condominios
                 </a></li>
-                <li><a href="#" class="boton1 bgColorBlack colorRed" id="btnClick3">Locales</a>
+                <li><a href="#locales" class="boton1 bgColorBlack colorRed" id="btnClick3">Locales</a>
                 </li>
             </ul>
-            <div id="cont-conjunto">
+            <div id="casas">
                 <div class="propiedad bgColorBlue">
                     <img src="media/casa1.jpg" alt="casa 1">
                     <div class="contenido-prop">
-                        <p>Casa en alquiler. Manuel Castro al 800, Banfield, Lomas de Zamora.</p>
+                        <p>Casa en alquiler. Manuel Castro al 1500, Banfield, Lomas de Zamora.</p>
                         <p class="precio colorYellow">$90.000</p>
                         <ul class="iconos colorWhite">
                             <li><img src="media/baño.png" alt=""></li>
@@ -153,7 +153,7 @@
                 <div class="propiedad bgColorBlue">
                     <img src="media/casa2.jpg" alt="casa 2">
                     <div class="contenido-prop">
-                        <p>Casa en venta en Pampa al 3300, Belgrano R, Capital Federal.</p>
+                        <p>Casa en venta en Pampa al 200, Belgrano R, Capital Federal.</p>
                         <p class="precio colorYellow">USD 1.350.000</p>
                         <ul class="iconos colorWhite">
                             <li><img src="media/baño.png" alt=""></li>
@@ -175,7 +175,7 @@
                 <div class="propiedad bgColorBlue">
                     <img src="media/casa3.jpg" alt="casa 3">
                     <div class="contenido-prop">
-                        <p>Casa en alquiler Garay 700, Ramos Mejía, La Matanza.</p>
+                        <p>Casa en alquiler Garay 450, Ramos Mejía, La Matanza.</p>
                         <p class="precio colorYellow">$100.000</p>
                         <ul class="iconos colorWhite">
                             <li><img src="media/baño.png" alt=""></li>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-            <div id="cont-conjunto1">
+            <div id="departamentos" class="ocultar">
                 <div class="propiedad bgColorBlue">
                     <img src="media/departamento1.jpg" alt="Departamento 1">
                     <div class="contenido-prop">
@@ -263,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div id="cont-conjunto2">
+            <div id="condominios" class="ocultar">
                 <div class="propiedad bgColorBlue">
                     <img src="media/condominio1.jpg" alt="Condominio 1">
                     <div class="contenido-prop">
@@ -331,7 +331,7 @@
                     </div>
                 </div>
             </div>
-            <div id="cont-conjunto3">
+            <div id="locales" class="ocultar">
                 <div class="propiedad bgColorBlue">
                     <img src="media/local1.jpg" alt="Local 1">
                     <div class="contenido-prop">
@@ -406,7 +406,7 @@
     </div>
     <div id="servicios">
         <div id="cont-serv">
-            <h2 class="typeR bold ">Servicios</h2>
+            <h2 class="typeR bold colorBlack">Servicios</h2>
             <div id="cont-general">
                 <div class="contenido-serv bgColorBlack">
                     <h3 class="typeR colorWhite">Administración de Propiedades</h3>
@@ -429,7 +429,7 @@
                     </div>
                 </div>
             </div>
-            <div id="cont-general1">
+            <div id="cont-general1" class="ocultar">
                 <div class="contenido-serv bgColorBlack">
                     <h3 class="typeR colorWhite">Administración de Propiedades</h3>
                     <div class="serv-img">
@@ -451,7 +451,7 @@
                     </div>
                 </div>
             </div>
-            <div id="cont-general2">
+            <div id="cont-general2" class="ocultar">
                 <div class="contenido-serv bgColorBlack">
                     <h3 class="typeR colorWhite">Administración de Propiedades</h3>
                     <div class="serv-img">
@@ -464,18 +464,81 @@
                 </div>
             </div>
             <ul class="slide">
-                <li><a href="#" id="btnServ"><img src="media/circulo-amarillo.png" alt="circulo-blanco"></a></li>
-                <li><a href="#" id="btnServ1"><img src="media/circulo-negro.png" alt="circulo-negro"></a></li>
-                <li><a href="#" id="btnServ2"><img src="media/circulo-negro.png" alt="circulo-negro"></a></li>
+                <li><i id="btnServ" class="fas fa-circle colorYellow"></i></li>
+                <li><i id="btnServ1" class="fas fa-circle colorBlack"></i></li>
+                <li><i id="btnServ2" class="fas fa-circle colorBlack"></i></li>
             </ul>
         </div>
     </div>
-    <div id="contacto">
-        <div id="cont-contact" class="colorWhite">
-            <h2 class="typeR bold">Contacta a residencias platino</h2>
-            <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad.
-            </p>
-            <a href="paginas/contacto.html" class="boton-contact colorBlack bgColorYellow">Contactanos</a>
+    <div id="agentes">
+        <div id="cont-agent">
+        <h2 class="typeR bold colorWhite">Agentes</h2>
+            <div id="contenido-cajas">
+                <div id="caja" class="bgColorBlue">
+                    <img src="media/agente1.jpg" class="card-img-top" alt="...">
+                    <div class="cont-caja colorWhite">
+                        <h3 class="typeR">Juan Cruz</h3>
+                        <p class="pt-3">Un corredor altamente calificado conocido por su profundo conocimiento del 
+                        mercado y su inigualable dedicacion a los clientes, el exito de Juan se basa casi exclusivamente 
+                        en referencias positivas. Se gana el respeto de sus clientes trabajando incansablemente en su 
+                        nombre y ofreciendoles siempre consejos sinceros.</p>
+                    </div>
+                </div>
+                <div id="caja" class="bgColorBlue">
+                    <img src="media/agente2.jpg" class="card-img-top" alt="...">
+                    <div class="cont-caja colorWhite">
+                        <h3 class="typeR">Cyntia Lopez</h3>
+                        <p class="pt-3">Ha pasado mas de dos decadas ayudando a los clientes a comprar y vender 
+                        propiedades con mas de 2000 ofertas y 250 millones de dolares en ventas. Ademas, ha 
+                        servido a su industria al servir como presidenta de la Junta de Agentes Inmobiliarios de
+                        la provincia de Buenos Aires.</p>
+                    </div>
+                </div>
+                <div id="caja" class="bgColorBlue">
+                    <img src="media/agente3.jpg" class="card-img-top" alt="...">
+                    <div class="cont-caja colorWhite">
+                        <h3 class="typeR">Marcelo De La Torre</h3>
+                        <p class="pt-3">Su actividad se basa en mas del 80% de referencias de clientes satisfechos.
+                        Lo mas importante para Marcelo es brindar el mejor servicio a compradores y vendedores 
+                        para ganar su confianza, referencias y lealtad.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="contenido-cajas1" class="ocultar">
+                <div id="caja" class="bgColorBlue">
+                    <img src="media/agente4.jpg" class="card-img-top" alt="...">
+                    <div class="cont-caja colorWhite">
+                        <h3 class="typeR">Leticia Juarez</h3>
+                        <p class="pt-3">Su negocio se basa en mas del 70% de referencias de clientes satisfechos. 
+                        Lo mas importante para Leticia es proporcionar mejor servicio a compradores y vendedores 
+                        para ganar su confianza, referencias y lealtad.</p>
+                    </div>
+                </div>
+                <div id="caja" class="bgColorBlue">
+                    <img src="media/agente5.jpg" class="card-img-top" alt="...">
+                    <div class="cont-caja colorWhite">
+                        <h3 class="typeR">Cristian Martinez</h3>
+                        <p class="pt-3">Cristian Martinez aporta catorce años de experienciae en bienes raices, 
+                        excelente servicio al cliente y el compromiso de trabajar duro, escuchar y dar seguimiento.
+                        Brinda un servicio de calidad para construir relaciones con los clientes y, lo que es mas 
+                        importante, mantener esas relaciones comunicandose de manera efectiva.</p>
+                    </div>
+                </div>
+                <div id="caja" class="bgColorBlue">
+                    <img src="media/agente6.jpg" class="card-img-top" alt="...">
+                    <div class="cont-caja colorWhite">
+                        <h3 class="typeR">Sofia Suarez</h3>
+                        <p class="pt-3">Como agente inmobiliario, su primera prioridad es hacer felices a sus 
+                        clientes. Sofia escucha los deseos y necesidades de sus clientes para lograr el mejor 
+                        resultado en cada transaccion. Sus clientes pueden contar con ella en cualquier 
+                        momento del dia cuando tengan una pregunta o inquietud.</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="slide">
+                <li><i id="btnAgent" class="fas fa-circle colorYellow"></i></li>
+                <li><i id="btnAgent1" class="fas fa-circle colorWhite"></i></li>
+            </ul>
         </div>
     </div>
     <div id="blog">
@@ -509,7 +572,7 @@
     </div>
     <div id="testimoniales">
         <div id="cont-test">
-            <h2 class="typeR bold colorBlack">Testimoniales</h2>
+            <h2 class="typeR bold colorWhite">Testimoniales</h2>
             <div id="cont-gen">
                 <div class="contenido-test">
                     <img src="media/cliente1.jpg" alt="Cliente 1">
@@ -526,43 +589,51 @@
                     </div>
                 </div>
             </div>
-            <div id="cont-gen1">
+            <div id="cont-gen1" class="ocultar">
                 <div class="contenido-test">
                     <img src="media/cliente3.jpg" alt="Cliente 3">
                     <div class="contenido-after bgColorBlue colorWhite">
-                        <p>“El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas.”</p>
-                        <p class="espacio">ROBERTO DÍAZ</p>
+                        <p>“La transacción fue eficaz y el proceso agradable. Recomiendo sin duda Residencias Platino”</p>
+                        <p class="espacio">KAREN FLEITAS</p>
                     </div>
                 </div>
                 <div class="contenido-test">
                     <img src="media/cliente4.jpg" alt="Cliente 4">
                     <div class="contenido-after bgColorBlue colorWhite">
-                        <p>“La experiencia fue buena, así como la calidad del trato entre el asesor (Nicola) y yo. No cambiaría nada.”</p>
-                        <p class="espacio">JUAN GARRIDO</p>
+                        <p>“Nuestras negociaciones se realizaron sin problemas y todos los acuerdos fueron cumplidos estrictamente.”</p>
+                        <p class="espacio">LUCIANA CASTILLO</p>
                     </div>
                 </div>
             </div>
-            <div id="cont-gen2">
+            <div id="cont-gen2" class="ocultar">
                 <div class="contenido-test">
                     <img src="media/cliente5.jpg" alt="Cliente 5">
                     <div class="contenido-after bgColorBlue colorWhite">
-                        <p>“El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas.”</p>
-                        <p class="espacio">ROBERTO DÍAZ</p>
+                        <p>“Toda la negocicación se completó con gran eficacia, dejándome muy satisfecho con el servicio proporcionado. ¡Recomendado!”</p>
+                        <p class="espacio">ESTEBAN DUARTE</p>
                     </div>
                 </div>
                 <div class="contenido-test">
                     <img src="media/cliente6.jpg" alt="Cliente 6">
                     <div class="contenido-after bgColorBlue colorWhite">
-                        <p>“La experiencia fue buena, así como la calidad del trato entre el asesor (Nicola) y yo. No cambiaría nada.”</p>
-                        <p class="espacio">JUAN GARRIDO</p>
+                        <p>“Felicito a Residencias Platino por su profesionalidad y por la calidad del servicio proporcionado. ¡Calidad Máxima!”</p>
+                        <p class="espacio">SABRINA MEJIA</p>
                     </div>
                 </div>
             </div>
             <ul class="slide">
-                <li><a href="#" id="btnSlide"><img src="media/circulo-blanco.png" alt="circulo-blanco"></a></li>
-                <li><a href="#" id="btnSlide1"><img src="media/circulo-negro.png" alt="circulo-negro"></a></li>
-                <li><a href="#" id="btnSlide2"><img src="media/circulo-negro.png" alt="circulo-negro"></a></li>
+                <li><i id="btnTest" class="fas fa-circle colorYellow"></i></li>
+                <li><i id="btnTest1" class="fas fa-circle colorWhite"></i></li>
+                <li><i id="btnTest2" class="fas fa-circle colorWhite"></i></li>
             </ul>
+        </div>
+    </div>
+    <div id="contacto">
+        <div id="cont-contact" class="colorWhite">
+            <h2 class="typeR bold">Contacta a residencias platino</h2>
+            <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad.
+            </p>
+            <a href="paginas/contacto.html" class="boton-contact colorBlack bgColorYellow">Contactanos</a>
         </div>
     </div>
     <div id="mapa">

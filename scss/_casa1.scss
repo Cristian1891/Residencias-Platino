@@ -1,0 +1,67 @@
+/*Casa1*/
+#descrip{
+	overflow: hidden;
+}
+
+.iconos-rest li{
+	list-style: none;
+}
+
+.iconos-rest li img{
+	width: 40px;
+	height: 30px;
+}
+
+.galeria{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	list-style: none;
+	margin-bottom: 3em;
+}
+
+.galeria img{
+	width: 300px;
+	height: 200px;
+	padding-top: 2em;
+}
+
+.cont-descrip{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: no-wrap;
+	align-items: center;
+	padding: 3em 5rem;
+	font-size: 20px;
+}
+
+.cont-descrip h2{
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.cont-descrip h3{
+	padding: 2em 0;
+}
+
+.resto{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 10rem 3em 10rem;
+}
+
+.iconos-rest{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2em 0;
+}
+
+.iconos-rest li{
+	display: inline-block;
+	padding: 0 1rem;
+}

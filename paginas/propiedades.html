@@ -5,26 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
 	<title>Propiedades Platino</title>
 </head>
 <body>
 	<div id="cabecera">
-        <header id="header" class="fixed-top">
+        <header id="header" class="fixed-top bgColorBlack">
             <div class="container">
         
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="../index.html" class="scrollto"><img src="../media/residencias.png" alt="" class="img-fluid"></a>
+                <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="" class="img-fluid"></a>
             </div>
         
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="../index.html#nosotros">Nosotros</a></li>
-                        <li><a href="#">Agentes</a></li>
+                        
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../paginas/propiedades.html">Propiedades</a>
-                            <ul>
+                        <li class="drop-down"><a href="../paginas/propiedades.html">Propiedades</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/propiedades.html">Casas</a></li>
                             <li><a href="../paginas/propiedades.html">Departamentos</a></li>
                             <li><a href="../paginas/propiedades.html">Condominios</a></li>
@@ -33,8 +34,8 @@
                             </ul>
                         </li>          
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#servicios">Servicios</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#servicios">Servicios</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="../paginas/servicios.html#Tasaciones">
@@ -47,10 +48,11 @@
                                 Geología</a></li></li>
                             </ul>
                         </li>         
+
+                        <li><a href="../index.html#agentes">Agentes</a></li>
                 
-                
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#blog">Blog</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#blog">Blog</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/blog.html">Conocer Mas</a></li>
                             </ul>
                         </li>   
@@ -165,451 +167,267 @@
                     <p>Casa en alquiler con jardin y pileta en Barrio Parque.</p>
                     <a href="../paginas/casa4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
-                <div class="propiet">
-                    <img src="../media/casa5.jpg" alt="Propiedad 5">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 695.0000</p>
-                    <p>Lote Interno Virazon</p>
-                    <p>Virazón, Nordelta.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>4</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>718m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>7amb</p>
-                    </ul>
-                    <p>Divina casa en venta en Virazon a estrenar.</p>
-                    <a href="../paginas/casa5.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/casa6.jpg" alt="Propiedad 6">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 750.0000</p>
-                    <p>St Thomas Sur al 100</p>
-                    <p>Canning, Ezeiza.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>780m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>8amb</p>
-                    </ul>
-                    <p>Casa de lujo en venta - Saint Thomas Sur.</p>
-                    <a href="../paginas/casa6.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
             </div>
-            <div id="casa-propiet1">
+            <div id="casa-propiet1" class="ocultar">
                 <div class="propiet">
                    <img src="../media/departamento1.jpg" alt="">
                </div>
                <div class="contenido-propiet">
-                   <p class="precio colorYellow">$90.000</p>
-                   <p class="pr">Manuel Castro al 800</p>
-                   <p>Banfield, Lomas de Zamora.</p>
+                   <p class="precio colorYellow">$ 67.000</p>
+                   <p class="pr">Acoyte al 5400</p>
+                   <p>Caballito, Capital Federal.</p>
                    <ul class="iconos-propi colorBlack">
                        <li><img src="../media/baño1.png" alt=""></li>
-                       <p>3</p>
+                       <p>1</p>
                        <li><img src="../media/dormitorio1.png" alt=""></li>
                        <p>3</p>
                        <li><img src="../media/auto1.png" alt=""></li>
-                       <p>2</p>
+                       <p>1</p>
                        <li><img src="../media/medida1.png" alt=""></li>
-                       <p>375m²</p>
+                       <p>86m²</p>
                        <li><img src="../media/puerta1.png" alt=""></li>
                        <p>5amb</p>
                    </ul>
-                   <p>Excelente casa en alquiler. Banfield Oeste.</p>
+                   <p>Parque Centenario en alquiler. 5 ambientes.</p>
                    <a href="../paginas/departamento1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                </div>
                <div class="propiet">
                    <img src="../media/departamento2.jpg" alt="">
                </div>
                <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 1.350.000</p>
-                   <p>Pampa al 300</p>
-                   <p>Belgrano R, Capital Federal.</p>
+                   <p class="precio colorYellow">USD 1.200</p>
+                   <p>Quintana al 1500.</p>
+                   <p>Recoleta, Capital Federal.</p>
                    <ul class="iconos-propi colorBlack">
                        <li><img src="../media/baño1.png" alt=""></li>
-                       <p>3</p>
+                       <p>2</p>
                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>5</p>
+                       <p>4</p>
                        <li><img src="../media/auto1.png" alt=""></li>
-                       <p>3</p>
+                       <p>1</p>
                        <li><img src="../media/medida1.png" alt=""></li>
-                       <p>473m²</p>
+                       <p>140m²</p>
                        <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>9amb</p>
+                       <p>7amb</p>
                    </ul>
-                   <p>Casa en venta en Belgrano. Única por su estilo y arquitectura.</p>
+                   <p>Departamento en Alquiler en la mejor zona de Recoleta.</p>
                    <a href="../paginas/departamento2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                </div>
                <div class="propiet">
                    <img src="../media/departamento3.jpg" alt="">
                </div>    
                <div class="contenido-propiet">
-                   <p class="precio colorYellow">$ 100.000</p>
-                   <p>Garay 700</p>
-                   <p>Ramos Mejía, La Matanza.</p>
+                   <p class="precio colorYellow">USD 130.000</p>
+                   <p>Barragan al 200</p>
+                   <p>Liniers, Capital Federal.</p>
                    <ul class="iconos-propi colorBlack">
                        <li><img src="../media/baño1.png" alt=""></li>
-                       <p>3</p>
+                       <p>1</p>
                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>4</p>
+                       <p>1</p>
                        <li><img src="../media/auto1.png" alt=""></li>
                        <p>1</p>
                        <li><img src="../media/medida1.png" alt=""></li>
-                       <p>280m²</p>
+                       <p>59m²</p>
                        <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>5amb</p>
+                       <p>2amb</p>
                    </ul>
-                   <p>Chalet en alquiler en Ramos Mejía - Barrio Pileta</p>
+                   <p>Departamento en Venta en Liniers.</p>
                    <a href="../paginas/departamento3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                </div>
                <div class="propiet">
                    <img src="../media/departamento4.jpg" alt="">
                </div> 
                <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 6500</p>
-                   <p>Sevilla al 2900</p>
-                   <p>Palermo Chico, Palermo.</p>
+                   <p class="precio colorYellow">USD 190.000</p>
+                   <p>Arribeños al 800</p>
+                   <p>Zárate, GBA Zona Norte.</p>
                    <ul class="iconos-propi colorBlack">
                        <li><img src="../media/baño1.png" alt=""></li>
-                       <p>3</p>
+                       <p>2</p>
                        <li><img src="../media/dormitorio1.png" alt=""></li>
                        <p>3</p>
                        <li><img src="../media/auto1.png" alt=""></li>
                        <p>1</p>
                        <li><img src="../media/medida1.png" alt=""></li>
-                       <p>450m²</p>
+                       <p>80m²</p>
                        <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>10amb</p>
+                       <p>4amb</p>
                    </ul>
-                   <p>Casa en alquiler con jardin y pileta en Barrio Parque.</p>
+                   <p>Departamento en Venta en Zárate.</p>
                    <a href="../paginas/departamento4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                </div>
-               <div class="propiet">
-                   <img src="../media/departamento5.jpg" alt="">
-               </div>
-               <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 695.0000</p>
-                   <p>Lote Interno Virazon</p>
-                   <p>Virazón, Nordelta.</p>
-                   <ul class="iconos-propi colorBlack">
-                       <li><img src="../media/baño1.png" alt=""></li>
-                       <p>5</p>
-                       <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>4</p>
-                       <li><img src="../media/auto1.png" alt=""></li>
-                       <p>2</p>
-                       <li><img src="../media/medida1.png" alt=""></li>
-                       <p>718m²</p>
-                       <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>7amb</p>
-                   </ul>
-                   <p>Divina casa en venta en Virazon a estrenar.</p>
-                   <a href="../paginas/departamento5.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-               </div>
-               <div class="propiet">
-                   <img src="../media/departamento6.jpg" alt="">
-               </div>
-               <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 750.0000</p>
-                   <p>St Thomas Sur al 100</p>
-                   <p>Canning, Ezeiza.</p>
-                   <ul class="iconos-propi colorBlack">
-                       <li><img src="../media/baño1.png" alt=""></li>
-                       <p>5</p>
-                       <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>5</p>
-                       <li><img src="../media/auto1.png" alt=""></li>
-                       <p>2</p>
-                       <li><img src="../media/medida1.png" alt=""></li>
-                       <p>780m²</p>
-                       <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>8amb</p>
-                   </ul>
-                   <p>Casa de lujo en venta - Saint Thomas Sur.</p>
-                   <a href="../paginas/departamento6.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-               </div>
            </div>
-           <div id="casa-propiet2">
+           <div id="casa-propiet2" class="ocultar">
                 <div class="propiet">
                     <img src="../media/condominio1.jpg" alt="">
                 </div>
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">$90.000</p>
-                    <p class="pr">Manuel Castro al 800</p>
-                    <p>Banfield, Lomas de Zamora.</p>
+                    <p class="precio colorYellow">$ 490.000</p>
+                    <p class="pr">Carlos Calvo al 700</p>
+                    <p>San Telmo, Capital Federal</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
                         <p>3</p>
                         <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
+                        <p>6</p>
                         <li><img src="../media/auto1.png" alt=""></li>
                         <p>2</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>375m²</p>
+                        <p>700m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>5amb</p>
+                        <p>7amb</p>
                     </ul>
-                    <p>Excelente casa en alquiler. Banfield Oeste.</p>
+                    <p>Condominio en alquiler en San Telmo.</p>
                     <a href="../paginas/condominio1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
                 <div class="propiet">
                     <img src="../media/condominio2.jpg" alt="">
                 </div>
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 1.350.000</p>
-                    <p>Pampa al 300</p>
-                    <p>Belgrano R, Capital Federal.</p>
+                    <p class="precio colorYellow">$ 170.000</p>
+                    <p>Chile al 1700.</p>
+                    <p>Monserrat, Capital Federal.</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
+                        <p>2</p>
                         <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
                         <p>3</p>
+                        <li><img src="../media/auto1.png" alt=""></li>
+                        <p>2</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>473m²</p>
+                        <p>600m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>9amb</p>
+                        <p>4amb</p>
                     </ul>
-                    <p>Casa en venta en Belgrano. Única por su estilo y arquitectura.</p>
+                    <p>Condominio en alquiler en Monserrat.</p>
                     <a href="../paginas/condominio2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
                 <div class="propiet">
                     <img src="../media/condominio3.jpg" alt="">
                 </div>    
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 100.000</p>
-                    <p>Garay 700</p>
-                    <p>Ramos Mejía, La Matanza.</p>
+                    <p class="precio colorYellow">USD 520.000</p>
+                    <p>Muelles 5</p>
+                    <p>Puertos, Escobar</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
                         <p>3</p>
                         <li><img src="../media/dormitorio1.png" alt=""></li>
                         <p>4</p>
                         <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
+                        <p>2</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>280m²</p>
+                        <p>800m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>5amb</p>
+                        <p>6amb</p>
                     </ul>
-                    <p>Chalet en alquiler en Ramos Mejía - Barrio Pileta</p>
+                    <p>Condominio en Venta en Puertos.</p>
                     <a href="../paginas/condominio3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
                 <div class="propiet">
                     <img src="../media/condominio4.jpg" alt="">
                 </div> 
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 6500</p>
-                    <p>Sevilla al 2900</p>
-                    <p>Palermo Chico, Palermo.</p>
+                    <p class="precio colorYellow">USD 185.000</p>
+                    <p>El Cardenal al 2000.</p>
+                    <p>Derqui, Pilar.</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
+                        <p>2</p>
                         <li><img src="../media/dormitorio1.png" alt=""></li>
                         <p>3</p>
                         <li><img src="../media/auto1.png" alt=""></li>
                         <p>1</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>450m²</p>
+                        <p>1000m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>10amb</p>
+                        <p>3amb</p>
                     </ul>
-                    <p>Casa en alquiler con jardin y pileta en Barrio Parque.</p>
+                    <p>Condominio en Venta en Derqui.</p>
                     <a href="../paginas/condominio4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
-                <div class="propiet">
-                    <img src="../media/condominio5.jpg" alt="">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 695.0000</p>
-                    <p>Lote Interno Virazon</p>
-                    <p>Virazón, Nordelta.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>4</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>718m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>7amb</p>
-                    </ul>
-                    <p>Divina casa en venta en Virazon a estrenar.</p>
-                    <a href="../paginas/condominio5.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/nosotros.jpg" alt="">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 750.0000</p>
-                    <p>St Thomas Sur al 100</p>
-                    <p>Canning, Ezeiza.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>780m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>8amb</p>
-                    </ul>
-                    <p>Casa de lujo en venta - Saint Thomas Sur.</p>
-                    <a href="../paginas/condominio6.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
             </div>
-            <div id="casa-propiet3">
+            <div id="casa-propiet3" class="ocultar">
                 <div class="propiet">
                     <img src="../media/local1.jpg" alt="">
                 </div>
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">$90.000</p>
-                    <p class="pr">Manuel Castro al 800</p>
-                    <p>Banfield, Lomas de Zamora.</p>
+                    <p class="precio colorYellow">$ 400.000</p>
+                    <p class="pr">Av Libertador al 3000</p>
+                    <p>Olivos, Vicente López</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
                         <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
                         <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
+                        <p>1</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>375m²</p>
+                        <p>650m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>5amb</p>
+                        <p>4amb</p>
                     </ul>
-                    <p>Excelente casa en alquiler. Banfield Oeste.</p>
+                    <p>Excelente local en alquiler en Olivos.</p>
                     <a href="../paginas/local1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
                 <div class="propiet">
                     <img src="../media/local2.jpg" alt="">
                 </div>
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 1.350.000</p>
-                    <p>Pampa al 300</p>
-                    <p>Belgrano R, Capital Federal.</p>
+                    <p class="precio colorYellow">$ 45.000</p>
+                    <p>Libertad al 3500</p>
+                    <p>Retiro, Capital Federal</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>5</p>
+                        <p>2</p>
                         <li><img src="../media/auto1.png" alt=""></li>
-                        <p>3</p>
+                        <p>1</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>473m²</p>
+                        <p>70m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>9amb</p>
+                        <p>2amb</p>
                     </ul>
-                    <p>Casa en venta en Belgrano. Única por su estilo y arquitectura.</p>
+                    <p>Local en alquiler en Retiro.</p>
                     <a href="../paginas/local2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
                 <div class="propiet">
                     <img src="../media/local3.jpg" alt="">
                 </div>    
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 100.000</p>
-                    <p>Garay 700</p>
-                    <p>Ramos Mejía, La Matanza.</p>
+                    <p class="precio colorYellow">USD 5.000.000</p>
+                    <p>Av. Cabildo al 7000</p>
+                    <p>Colegiales, Capital Federal.</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
                         <p>4</p>
                         <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
+                        <p>3</p>
                         <li><img src="../media/medida1.png" alt=""></li>
-                        <p>280m²</p>
+                        <p>2450m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>5amb</p>
+                        <p>10amb</p>
                     </ul>
-                    <p>Chalet en alquiler en Ramos Mejía - Barrio Pileta</p>
+                    <p>Local en Venta en Colegiales.</p>
                     <a href="../paginas/local3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
                 <div class="propiet">
                     <img src="../media/local4.jpg" alt="">
                 </div> 
                 <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 6500</p>
-                    <p>Sevilla al 2900</p>
-                    <p>Palermo Chico, Palermo.</p>
+                    <p class="precio colorYellow">USD 95.000</p>
+                    <p>Mitre, Bartolome al 6200</p>
+                    <p>Almagro, Capital Federal.</p>
                     <ul class="iconos-propi colorBlack">
                         <li><img src="../media/baño1.png" alt=""></li>
                         <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>450m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>10amb</p>
-                    </ul>
-                    <p>Casa en alquiler con jardin y pileta en Barrio Parque.</p>
-                    <a href="../paginas/local4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/local5.jpg" alt="">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 695.0000</p>
-                    <p>Lote Interno Virazon</p>
-                    <p>Virazón, Nordelta.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>4</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>718m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>7amb</p>
-                    </ul>
-                    <p>Divina casa en venta en Virazon a estrenar.</p>
-                    <a href="../paginas/local5.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/local6.jpg" alt="">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 750.0000</p>
-                    <p>St Thomas Sur al 100</p>
-                    <p>Canning, Ezeiza.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>5</p>
                         <li><img src="../media/auto1.png" alt=""></li>
                         <p>2</p>
                         <li><img src="../media/medida1.png" alt=""></li>
                         <p>780m²</p>
                         <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>8amb</p>
+                        <p>7amb</p>
                     </ul>
-                    <p>Casa de lujo en venta - Saint Thomas Sur.</p>
-                    <a href="../paginas/local6.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+                    <p>Local en Venta en Almagro.</p>
+                    <a href="../paginas/local4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
                 </div>
             </div>
     	</div>

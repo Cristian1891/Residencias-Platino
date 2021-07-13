@@ -1,0 +1,121 @@
+/*--------------------------------------------------------------
+Barra Menú
+--------------------------------------------------------------*/
+
+#cabecera{
+	height: 100px;
+}
+
+#header {
+	height: 100px;
+	transition: all 0.5s;
+	z-index: 997;
+	transition: all 0.5s;
+	padding: 20px 0;
+	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  }
+  
+  
+  #header .logo img {
+	padding: 0;
+	margin: 7px 0;
+	max-height: 50px;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  Termina Barra Menú
+  --------------------------------------------------------------*/
+  
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  
+  /* Desktop Navigation */
+  
+  .main-nav,
+  .main-nav * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  .main-nav > ul > li {
+	position: relative;
+	white-space: nowrap;
+	float: left;
+  }
+  
+  .main-nav a {
+	display: block;
+	position: relative;
+	color: #FFFFFF;
+	padding: 20px 15px 0 15px;
+	transition: 0.3s;
+	font-size: 14px;
+  }
+  
+  .main-nav a:hover,
+  .main-nav li:hover > a {
+	color: #FACE7F;
+	text-decoration: none;
+  }
+  
+  .main-nav .drop-down ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: calc(100% + 30px);
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	padding: 10px 0;
+	background: #49494b;
+	box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+	transition: ease all 0.3s;
+  }
+  
+  .main-nav .drop-down:hover > ul {
+	opacity: 1;
+	top: 100%;
+	visibility: visible;
+  }
+  
+  .main-nav .drop-down li {
+	min-width: 180px;
+	position: relative;
+  }
+  
+  .main-nav .drop-down ul a {
+	padding: 10px 20px;
+	font-size: 13px;
+	color: #FFFFFF;
+  }
+  
+  .main-nav .drop-down ul a:hover,
+  .main-nav .drop-down ul li:hover > a {
+	color: #FACE7F;
+	background-color: #000000;
+  }
+  
+  .main-nav .drop-down > a:after {
+	content: "\f078";
+	font-family: FontAwesome;
+	padding-left: 10px;
+  }
+  
+  .main-nav .drop-down .drop-down ul {
+	top: 0;
+	left: calc(100% - 30px);
+  }
+  
+  .main-nav .drop-down .drop-down:hover > ul {
+	opacity: 1;
+	top: 0;
+	left: 100%;
+  }
+  
+  .main-nav .drop-down .drop-down > a {
+	padding-right: 35px;
+  }

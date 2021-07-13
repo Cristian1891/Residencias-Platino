@@ -5,26 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
+    <link href="../css/lightbox.min.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
     <div id="cabecera">
-        <header id="header" class="fixed-top">
+        <header id="header" class="fixed-top bgColorBlack">
             <div class="container">
         
             <div class="logo float-left">
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="../index.html" class="scrollto"><img src="../media/residencias.png" alt="" class="img-fluid"></a>
+                <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="" class="img-fluid"></a>
             </div>
         
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="../index.html#nosotros">Nosotros</a></li>
-                        <li><a href="#">Agentes</a></li>
+                        
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#propiedades">Propiedades</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#propiedades">Propiedades</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/propiedades.html">Casas</a></li>
                             <li><a href="../paginas/propiedades.html">Departamentos</a></li>
                             <li><a href="../paginas/propiedades.html">Condominios</a></li>
@@ -33,24 +35,25 @@
                             </ul>
                         </li>          
                 
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#servicios">Servicios</a>
-                            <ul>
-                            <li><a href="../paginas/servicios.html#Administración de Propiedades">
+                        <li class="drop-down"><a href="../index.html#servicios">Servicios</a>
+                            <ul class="mt-2">
+                            <li><a href="../paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="../paginas/servicios.html#Tasaciones">
                                 Tasaciones</a></li></li>
-                            <li><a href="../paginas/servicios.html#Asesoramiento Jurídico">
+                            <li><a href="../paginas/servicios.html#Asesoramiento">
                                 Asesoramiento Jurídico</a></li></li>
                             <li><a href="../paginas/servicios.html#Arquitectura">
                                 Arquitectura</a></li></li>
-                            <li><a href="../paginas/servicios.html#Geología">
+                            <li><a href="../paginas/servicios.html#Geologia">
                                 Geología</a></li></li>
                             </ul>
                         </li>         
+
+                        <li><a href="../index.html#agentes">Agentes</a></li>
                 
-                
-                        <li class="drop-down"><a class="dropdown-toggle pr-2" href="../index.html#blog">Blog</a>
-                            <ul>
+                        <li class="drop-down"><a href="../index.html#blog">Blog</a>
+                            <ul class="mt-2">
                             <li><a href="../paginas/blog.html">Conocer Mas</a></li>
                             </ul>
                         </li>   
@@ -68,16 +71,20 @@
             <h2 class="typeR bold">Propiedades</h2>
             <h3 class="typeR">Casa en venta en Belgrano.</h3>
             <p>Galería</p>
-            <div class="galeria">
-              <img src="../media/foto1.jpg" alt="">
-              <img src="../media/foto2.jpg" alt="">
-              <img src="../media/foto3.jpg" alt="">
-          </div>
-          <div class="slider">
-            <li><img src="../media/circulo-amarillo.png" alt=""></li>
-            <li><img src="../media/circulo-negro.png" alt=""></li>
-            <li><img src="../media/circulo-negro.png" alt=""></li>
-          </div>
+            <ul class="galeria">
+                <li><a href="../media/belgrano/belgrano1.jpg" data-lightbox="galeria">
+                <img src="../media/belgrano-small/belgrano1.jpg" alt=""></a></li>
+                <li><a href="../media/belgrano/belgrano2.jpg" data-lightbox="galeria">
+                <img src="../media/belgrano-small/belgrano2.jpg" alt=""></a></li>
+                <li><a href="../media/belgrano/belgrano3.jpg" data-lightbox="galeria">
+                <img src="../media/belgrano-small/belgrano3.jpg" alt=""></a></li>
+                <li><a href="../media/belgrano/belgrano4.jpg" data-lightbox="galeria">
+                <img src="../media/belgrano-small/belgrano4.jpg" alt=""></a></li>
+                <li><a href="../media/belgrano/belgrano5.jpg" data-lightbox="galeria">
+                <img src="../media/belgrano-small/belgrano5.jpg" alt=""></a></li>
+                <li><a href="../media/belgrano/belgrano6.jpg" data-lightbox="galeria">
+                <img src="../media/belgrano-small/belgrano6.jpg" alt=""></a></li>
+            </ul>
             <div class="resto">
                 <p>Precio:</p>
                 <p class="colorYellow">USD 1.350.0000</p>
@@ -140,6 +147,7 @@
 
     <script src="../bootstrap/js/jquery-3.5.1.slim.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
 	
 </body>
 </html>

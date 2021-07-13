@@ -1,0 +1,38 @@
+/*Servicios*/
+
+.servicios{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 4em 8rem;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.servicios h2{
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.servicio1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 2em 0;
+}
+
+.servicio1 img{
+	width: 100%;
+	height: 600px;
+	margin: 3em 0;
+}
+
+.serv-listado{
+	padding-left: 2rem;
+}
+
+.serv-list{
+	padding-left: 2rem;
+}

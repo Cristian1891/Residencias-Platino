@@ -1,10 +1,9 @@
-
 if (document.getElementById('propiedades')) {
 
-    var casas = document.getElementById("cont-conjunto");
-    var departamentos = document.getElementById("cont-conjunto1");
-    var condominios = document.getElementById("cont-conjunto2");
-    var locales = document.getElementById("cont-conjunto3");
+    var casas = document.getElementById("casas");
+    var departamentos = document.getElementById("departamentos");
+    var condominios = document.getElementById("condominios");
+    var locales = document.getElementById("locales");
 
 
     var btn = document.getElementById("btnClick");
@@ -20,82 +19,50 @@ if (document.getElementById('propiedades')) {
 
     function displayInfo(event) {
         event.preventDefault();
-        casas.style.display = 'flex';
         departamentos.style.display = 'none';
         condominios.style.display = 'none';
         locales.style.display = 'none';
-        btn.classList.remove('bgColorBlack');
-        btn.classList.remove('colorRed');
-        btn.classList.add('bgColorRed');
-        btn.classList.add('colorWhite');
-        btn1.classList.remove('bgColorRed');
-        btn1.classList.remove('colorWhite');
-        btn1.classList.add('bgColorBlack');
-        btn1.classList.add('colorRed');
-        btn2.classList.remove('bgColorRed');
-        btn2.classList.remove('colorWhite');
-        btn2.classList.add('bgColorBlack');
-        btn2.classList.add('colorRed');
-        btn2.classList.remove('bgColorRed');
-        btn2.classList.remove('colorWhite');
-        btn2.classList.add('bgColorBlack');
-        btn2.classList.add('colorRed');
-        btn3.classList.remove('bgColorRed');
-        btn3.classList.remove('colorWhite');
-        btn3.classList.add('bgColorBlack');
-        btn3.classList.add('colorRed');
+        casas.style.display = 'flex';
+        btn.classList.remove('bgColorBlack','colorRed');
+        btn.classList.add('bgColorRed', 'colorWhite');
+        btn1.classList.remove('bgColorRed','colorWhite');
+        btn1.classList.add('bgColorBlack','colorRed');
+        btn2.classList.remove('bgColorRed','colorWhite');
+        btn2.classList.add('bgColorBlack','colorRed');
+        btn3.classList.remove('bgColorRed','colorWhite');
+        btn3.classList.add('bgColorBlack','colorRed');
     }
 
     function displayInfo1(event) {
         event.preventDefault();
         casas.style.display = 'none';
-        departamentos.style.display = 'flex';
         condominios.style.display = 'none';
         locales.style.display = 'none';
-        btn.classList.remove('bgColorRed');
-        btn.classList.remove('colorWhite');
-        btn.classList.add('bgColorBlack');
-        btn.classList.add('colorRed');
-        btn1.classList.remove('bgColorBlack');
-        btn1.classList.remove('colorRed');
-        btn1.classList.add('bgColorRed');
-        btn1.classList.add('colorWhite');
-        btn2.classList.remove('bgColorRed');
-        btn2.classList.remove('colorWhite');
-        btn2.classList.add('bgColorBlack');
-        btn2.classList.add('colorRed');
-        btn2.classList.remove('bgColorRed');
-        btn2.classList.remove('colorWhite');
-        btn2.classList.add('bgColorBlack');
-        btn2.classList.add('colorRed');
-        btn3.classList.remove('bgColorRed');
-        btn3.classList.remove('colorWhite');
-        btn3.classList.add('bgColorBlack');
-        btn3.classList.add('colorRed');
+        departamentos.style.cssText = "display: flex; flex-direction: row; justify-content: space-evenly; margin: 5em 0;";
+        btn.classList.remove('bgColorRed','colorWhite');
+        btn.classList.add('bgColorBlack','colorRed');
+        btn1.classList.remove('bgColorBlack','colorRed');
+        btn1.classList.add('bgColorRed','colorWhite');
+        btn2.classList.remove('bgColorRed','colorWhite');
+        btn2.classList.add('bgColorBlack','colorRed');
+        btn3.classList.remove('bgColorRed','colorWhite');
+        btn3.classList.add('bgColorBlack','colorRed');
     }
 
     function displayInfo2(event) {
         event.preventDefault();
         casas.style.display = 'none';
         departamentos.style.display = 'none';
-        condominios.style.display = 'flex';
         locales.style.display = 'none';
-        btn.classList.remove('bgColorRed');
-        btn.classList.remove('colorWhite');
-        btn.classList.add('bgColorBlack');
-        btn.classList.add('colorRed');
-        btn1.classList.remove('bgColorRed');
-        btn1.classList.remove('colorWhite');
-        btn1.classList.add('bgColorBlack');
-        btn1.classList.add('colorRed');
-        btn2.classList.remove('bgColorBlack');
-        btn2.classList.remove('colorRed');
-        btn2.classList.add('bgColorRed');
-        btn2.classList.add('colorWhite');
-        btn3.classList.remove('bgColorRed');
-        btn3.classList.remove('colorWhite');
-        btn3.classList.add('bgColorBlack');
-        btn3.classList.add('colorRed');
+        condominios.style.cssText = "display: flex; flex-direction: row; justify-content: space-evenly; margin: 5em 0;";
+        btn.classList.remove('bgColorRed','colorWhite');
+        btn.classList.add('bgColorBlack','colorRed');
+        btn1.classList.remove('bgColorRed','colorWhite');
+        btn1.classList.add('bgColorBlack','colorRed');
+        btn2.classList.remove('bgColorBlack','colorRed');
+        btn2.classList.add('bgColorRed','colorWhite');
+        btn3.classList.remove('bgColorRed','colorWhite');
+        btn3.classList.add('bgColorBlack','colorRed');
     }
 
     function displayInfo3(event) {
@@ -103,64 +70,19 @@ if (document.getElementById('propiedades')) {
         casas.style.display = 'none';
         departamentos.style.display = 'none';
         condominios.style.display = 'none';
-        locales.style.display = 'flex';
-        btn.classList.remove('bgColorRed');
-        btn.classList.remove('colorWhite');
-        btn.classList.add('bgColorBlack');
-        btn.classList.add('colorRed');
-        btn1.classList.remove('bgColorRed');
-        btn1.classList.remove('colorWhite');
-        btn1.classList.add('bgColorBlack');
-        btn1.classList.add('colorRed');
-        btn2.classList.remove('bgColorRed');
-        btn2.classList.remove('colorWhite');
-        btn2.classList.add('bgColorBlack');
-        btn2.classList.add('colorRed');
-        btn3.classList.remove('bgColorBlack');
-        btn3.classList.remove('colorRed');
-        btn3.classList.add('bgColorRed');
-        btn3.classList.add('colorWhite');
+        locales.style.cssText = "display: flex; flex-direction: row; justify-content: space-evenly; margin: 5em 0;";
+        btn.classList.remove('bgColorRed','colorWhite');
+        btn.classList.add('bgColorBlack','colorRed');
+        btn1.classList.remove('bgColorRed','colorWhite');
+        btn1.classList.add('bgColorBlack','colorRed');
+        btn2.classList.remove('bgColorRed','colorWhite');
+        btn2.classList.add('bgColorBlack','colorRed');
+        btn3.classList.remove('bgColorBlack','colorRed');
+        btn3.classList.add('bgColorRed','colorWhite');
     }
 
 }
 
-
-if (document.getElementById('testimoniales')) {
-
-    var slide = document.getElementById("cont-gen");
-    var slide1 = document.getElementById("cont-gen1");
-    var slide2 = document.getElementById("cont-gen2");
-
-    var btnSlide = document.getElementById("btnSlide");
-    var btnSlide1 = document.getElementById("btnSlide1");
-    var btnSlide2 = document.getElementById("btnSlide2");
-
-    btnSlide.addEventListener("click", displayTest);
-    btnSlide1.addEventListener("click", displayTest1);
-    btnSlide2.addEventListener("click", displayTest2);
-
-    function displayTest(event) {
-        event.preventDefault();
-        slide.style.display = 'flex';
-        slide1.style.display = 'none';
-        slide2.style.display = 'none';
-    }
-
-    function displayTest1(event) {
-        event.preventDefault();
-        slide.style.display = 'none';
-        slide1.style.display = 'flex';
-        slide2.style.display = 'none';
-    }
-
-    function displayTest2(event) {
-        event.preventDefault();
-        slide.style.display = 'none';
-        slide1.style.display = 'none';
-        slide2.style.display = 'flex';
-    }
-
-}
 
 if (document.getElementById('servicios')) {
 
@@ -178,26 +100,134 @@ if (document.getElementById('servicios')) {
 
     function displayServ(event) {
         event.preventDefault();
-        serv.style.display = 'flex';
         serv1.style.display = 'none';
         serv2.style.display = 'none';
+        serv.style.display = 'flex';
+        btnServ.classList.remove('colorBlack');
+        btnServ.classList.add('colorYellow');
+        btnServ1.classList.remove('colorYellow');
+        btnServ1.classList.add('colorBlack');
+        btnServ2.classList.remove('colorYellow');
+        btnServ2.classList.add('colorBlack');
     }
 
     function displayServ1(event) {
         event.preventDefault();
         serv.style.display = 'none';
-        serv1.style.display = 'flex';
         serv2.style.display = 'none';
+        serv1.style.cssText = "display: flex; flex-direction: row; justify-content: space-between; flex-wrap: no-wrap;";
+        btnServ.classList.remove('colorYellow');
+        btnServ.classList.add('colorBlack');
+        btnServ1.classList.remove('colorBlack');
+        btnServ1.classList.add('colorYellow');
+        btnServ2.classList.remove('colorYellow');
+        btnServ2.classList.add('colorBlack');
     }
 
     function displayServ2(event) {
         event.preventDefault();
         serv.style.display = 'none';
         serv1.style.display = 'none';
-        serv2.style.display = 'flex';
+        serv2.style.cssText = "display: flex; flex-direction: row; justify-content: center; flex-wrap: no-wrap;";
+        btnServ.classList.remove('colorYellow');
+        btnServ.classList.add('colorBlack');
+        btnServ1.classList.remove('colorYellow');
+        btnServ1.classList.add('colorBlack');
+        btnServ2.classList.remove('colorBlack');
+        btnServ2.classList.add('colorYellow');
     }
 
 }
+
+if (document.getElementById('agentes')) {
+
+    var agentes = document.getElementById("contenido-cajas");
+    var agentes1 = document.getElementById("contenido-cajas1");
+
+    var btnAgent = document.getElementById("btnAgent");
+    var btnAgent1 = document.getElementById("btnAgent1");
+
+    btnAgent.addEventListener("click", displayAgent);
+    btnAgent1.addEventListener("click", displayAgent1);
+    
+    function displayAgent(event) {
+        event.preventDefault();
+        agentes1.style.display = 'none';
+        agentes.style.display = 'flex';
+        btnAgent.classList.remove('colorWhite');
+        btnAgent.classList.add('colorYellow');
+        btnAgent1.classList.remove('colorYellow');
+        btnAgent1.classList.add('colorWhite');
+    }
+
+    function displayAgent1(event) {
+        event.preventDefault();
+        agentes.style.display = 'none';
+        agentes1.style.cssText = "display: flex; flex-flow: row nowrap; justify-content: space-evenly; padding-bottom: 4rem; font-size: 20px;";
+        btnAgent.classList.remove('colorYellow');
+        btnAgent.classList.add('colorWhite');
+        btnAgent1.classList.remove('colorWhite');
+        btnAgent1.classList.add('colorYellow');
+    }
+
+
+}
+
+if (document.getElementById('testimoniales')) {
+
+    var slide = document.getElementById("cont-gen");
+    var slide1 = document.getElementById("cont-gen1");
+    var slide2 = document.getElementById("cont-gen2");
+
+    var btnTest = document.getElementById("btnTest");
+    var btnTest1 = document.getElementById("btnTest1");
+    var btnTest2 = document.getElementById("btnTest2");
+
+    btnTest.addEventListener("click", displayTest);
+    btnTest1.addEventListener("click", displayTest1);
+    btnTest2.addEventListener("click", displayTest2);
+
+    function displayTest(event) {
+        event.preventDefault();
+        slide1.style.display = 'none';
+        slide2.style.display = 'none';
+        slide.style.display = 'flex';
+        btnTest.classList.remove('colorWhite');
+        btnTest.classList.add('colorYellow');
+        btnTest1.classList.remove('colorYellow');
+        btnTest1.classList.add('colorWhite');
+        btnTest2.classList.remove('colorYellow');
+        btnTest2.classList.add('colorWhite');
+    }
+
+    function displayTest1(event) {
+        event.preventDefault();
+        slide.style.display = 'none';
+        slide2.style.display = 'none';
+        slide1.style.cssText = "display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;";
+        btnTest.classList.remove('colorYellow');
+        btnTest.classList.add('colorWhite');
+        btnTest1.classList.remove('colorWhite');
+        btnTest1.classList.add('colorYellow');
+        btnTest2.classList.remove('colorYellow');
+        btnTest2.classList.add('colorWhite');
+    }
+
+    function displayTest2(event) {
+        event.preventDefault();
+        slide.style.display = 'none';
+        slide1.style.display = 'none';
+        slide2.style.cssText = "display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;";
+        btnTest.classList.remove('colorYellow');
+        btnTest.classList.add('colorWhite');
+        btnTest1.classList.remove('colorYellow');
+        btnTest1.classList.add('colorWhite');
+        btnTest2.classList.remove('colorWhite');
+        btnTest2.classList.add('colorYellow');
+    }
+
+}
+
 
 if (document.getElementById('casas')) {
 
@@ -219,82 +249,51 @@ if (document.getElementById('casas')) {
 
     function displayProp(event) {
         event.preventDefault();
-        cas.style.display = 'grid';
         dep.style.display = 'none';
         cond.style.display = 'none';
         loc.style.display = 'none';
-        btnProp.classList.remove('bgColorBlack');
-        btnProp.classList.remove('colorRed');
-        btnProp.classList.add('bgColorRed');
-        btnProp.classList.add('colorWhite');
-        btnProp1.classList.remove('bgColorRed');
-        btnProp1.classList.remove('colorWhite');
-        btnProp1.classList.add('bgColorBlack');
-        btnProp1.classList.add('colorRed');
-        btnProp2.classList.remove('bgColorRed');
-        btnProp2.classList.remove('colorWhite');
-        btnProp2.classList.add('bgColorBlack');
-        btnProp2.classList.add('colorRed');
-        btnProp2.classList.remove('bgColorRed');
-        btnProp2.classList.remove('colorWhite');
-        btnProp2.classList.add('bgColorBlack');
-        btnProp2.classList.add('colorRed');
-        btnProp3.classList.remove('bgColorRed');
-        btnProp3.classList.remove('colorWhite');
-        btnProp3.classList.add('bgColorBlack');
-        btnProp3.classList.add('colorRed');
+        cas.style.display = 'grid';
+        btnProp.classList.remove('bgColorBlack','colorRed');
+        btnProp.classList.add('bgColorRed','colorWhite');
+        btnProp1.classList.remove('bgColorRed','colorWhite');
+        btnProp1.classList.add('bgColorBlack','colorRed');
+        btnProp2.classList.remove('bgColorRed','colorWhite');
+        btnProp2.classList.add('bgColorBlack','colorRed');
+        btnProp2.classList.remove('bgColorRed','colorWhite');
+        btnProp3.classList.remove('bgColorRed','colorWhite');
+        btnProp3.classList.add('bgColorBlack','colorRed');
     }
 
     function displayProp1(event) {
         event.preventDefault();
         cas.style.display = 'none';
-        dep.style.display = 'grid';
         cond.style.display = 'none';
         loc.style.display = 'none';
-        btnProp.classList.remove('bgColorRed');
-        btnProp.classList.remove('colorWhite');
-        btnProp.classList.add('bgColorBlack');
-        btnProp.classList.add('colorRed');
-        btnProp1.classList.remove('bgColorBlack');
-        btnProp1.classList.remove('colorRed');
-        btnProp1.classList.add('bgColorRed');
-        btnProp1.classList.add('colorWhite');
-        btnProp2.classList.remove('bgColorRed');
-        btnProp2.classList.remove('colorWhite');
-        btnProp2.classList.add('bgColorBlack');
-        btnProp2.classList.add('colorRed');
-        btnProp2.classList.remove('bgColorRed');
-        btnProp2.classList.remove('colorWhite');
-        btnProp2.classList.add('bgColorBlack');
-        btnProp2.classList.add('colorRed');
-        btnProp3.classList.remove('bgColorRed');
-        btnProp3.classList.remove('colorWhite');
-        btnProp3.classList.add('bgColorBlack');
-        btnProp3.classList.add('colorRed');
+        dep.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 1fr); grid-column-gap: 2rem; margin: 2em 7rem;";
+        btnProp.classList.remove('bgColorRed','colorWhite');
+        btnProp.classList.add('bgColorBlack','colorRed');
+        btnProp1.classList.remove('bgColorBlack','colorRed');
+        btnProp1.classList.add('bgColorRed','colorWhite');
+        btnProp2.classList.remove('bgColorRed','colorWhite');
+        btnProp2.classList.add('bgColorBlack','colorRed');
+        btnProp3.classList.remove('bgColorRed','colorWhite');
+        btnProp3.classList.add('bgColorBlack','colorRed');
     }
 
     function displayProp2(event) {
         event.preventDefault();
         cas.style.display = 'none';
         dep.style.display = 'none';
-        cond.style.display = 'grid';
         loc.style.display = 'none';
-        btnProp.classList.remove('bgColorRed');
-        btnProp.classList.remove('colorWhite');
-        btnProp.classList.add('bgColorBlack');
-        btnProp.classList.add('colorRed');
-        btnProp1.classList.remove('bgColorRed');
-        btnProp1.classList.remove('colorWhite');
-        btnProp1.classList.add('bgColorBlack');
-        btnProp1.classList.add('colorRed');
-        btnProp2.classList.remove('bgColorBlack');
-        btnProp2.classList.remove('colorRed');
-        btnProp2.classList.add('bgColorRed');
-        btnProp2.classList.add('colorWhite');
-        btnProp3.classList.remove('bgColorRed');
-        btnProp3.classList.remove('colorWhite');
-        btnProp3.classList.add('bgColorBlack');
-        btnProp3.classList.add('colorRed');
+        cond.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 1fr); grid-column-gap: 2rem; margin: 2em 7rem;";
+        btnProp.classList.remove('bgColorRed','colorWhite');
+        btnProp.classList.add('bgColorBlack','colorRed');
+        btnProp1.classList.remove('bgColorRed','colorWhite');
+        btnProp1.classList.add('bgColorBlack','colorRed');
+        btnProp2.classList.remove('bgColorBlack','colorRed');
+        btnProp2.classList.add('bgColorRed','colorWhite');
+        btnProp3.classList.remove('bgColorRed','colorWhite');
+        btnProp3.classList.add('bgColorBlack','colorRed');
     }
 
     function displayProp3(event) {
@@ -302,27 +301,18 @@ if (document.getElementById('casas')) {
         cas.style.display = 'none';
         dep.style.display = 'none';
         cond.style.display = 'none';
-        loc.style.display = 'grid';
-        btnProp.classList.remove('bgColorRed');
-        btnProp.classList.remove('colorWhite');
-        btnProp.classList.add('bgColorBlack');
-        btnProp.classList.add('colorRed');
-        btnProp1.classList.remove('bgColorRed');
-        btnProp1.classList.remove('colorWhite');
-        btnProp1.classList.add('bgColorBlack');
-        btnProp1.classList.add('colorRed');
-        btnProp2.classList.remove('bgColorRed');
-        btnProp2.classList.remove('colorWhite');
-        btnProp2.classList.add('bgColorBlack');
-        btnProp2.classList.add('colorRed');
-        btnProp3.classList.remove('bgColorBlack');
-        btnProp3.classList.remove('colorRed');
-        btnProp3.classList.add('bgColorRed');
-        btnProp3.classList.add('colorWhite');
-
+        loc.style.cssText = "display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(4, 1fr); grid-column-gap: 2rem; margin: 2em 7rem; ";
+        btnProp.classList.remove('bgColorRed','colorWhite');
+        btnProp.classList.add('bgColorBlack','colorRed');
+        btnProp1.classList.remove('bgColorRed','colorWhite');
+        btnProp1.classList.add('bgColorBlack','colorRed');
+        btnProp2.classList.remove('bgColorRed','colorWhite');
+        btnProp2.classList.add('bgColorBlack','colorRed');
+        btnProp3.classList.remove('bgColorBlack','colorRed');
+        btnProp3.classList.add('bgColorRed','colorWhite');
     }
 }
-/*
+
 if (document.getElementById('contentHeader')) {
 
     var casa = document.getElementById("casa-propiet");
@@ -451,4 +441,4 @@ if (document.getElementById('contentHeader')) {
 
     
 
-}*/
+}
