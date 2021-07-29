@@ -1863,10 +1863,6 @@ a {
     display: inline;
     text-align: center;
   }
-  .cont-final img {
-    max-width: 15px;
-    max-height: 15px;
-  }
 }
 
 @media (min-width: 576px) {
