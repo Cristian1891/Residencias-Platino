@@ -55,9 +55,9 @@
     <section class="contacto">
         <h2 class="typeBold colorBlack">Contacto</h2>
         <div class="cont-pagContacto colorBlack">
-            <img src="../media/destacada3.jpg" alt="destacada3">
+            <img src="../media/destacada3.jpg" srcset="../media/img-responsive/destacada3.jpg 320w, ../media/destacada3.jpg" alt="destacada3">
             <h3 class="typeBold">Llene el formulario de Contacto</h3>
-            <form class="cont-form" action="../paginas/recibe.html" method="POST" enctype="multipart/form-data">
+            <form action="https://cristian1891.github.io/Residencias-Platino/" method="post" enctype="multipart/form-data" class="cont-form">
                 <fieldset class="border border-dark px-3 pt-2 pb-4 my-5">
                     <legend class="semiBold w-auto">Información Personal</legend>
                     <label class="pt-0" for="nombre">Nombre:</label>
@@ -115,6 +115,8 @@
 
                 <input type="submit" name="sube_form" value="Enviar" class="boton1 bgColorRed colorWhite mr-3">
                 <input type="reset" name="resetear" value="Borrar todo" class="boton1 bgColorRed colorWhite ml-2">
+            
+                
             </form>
         </div>
     </section>
@@ -158,11 +160,13 @@
         </div>
     </footer>
 
+    
     <script src="../lib/jquery/jquey.min.js"></script>
     <script src="../lib/jquery/jquery-migrate.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/mobile-nav.js"></script>
     <script src="../js/script.js"></script>
+    
 
 </body>
 </html>
