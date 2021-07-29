@@ -15,9 +15,9 @@
 
     $('.secciones li a').on('click', function(){
         $('.secciones li a').removeClass('activo bgColorRed colorWhite');
-        $('.secciones li a').addClass('bgColorBlack colorRed');
+        $('.secciones li a').addClass('bgColorWhite colorRed');
         $(this).addClass('activo');
-        $(this).removeClass('bgColorBlack colorRed');
+        $(this).removeClass('bgColorWhite colorRed');
         $(this).addClass('bgColorRed colorWhite');
         $('.ocultar').hide();
         var enlace = $(this).attr('href');

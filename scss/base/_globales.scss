@@ -45,7 +45,7 @@
     }
 }
 
-@each $bgColor in bgColorYellow, bgColorRed, bgColorBlue, bgColorBlack{
+@each $bgColor in bgColorYellow, bgColorRed, bgColorBlue, bgColorWhite, bgColorBlack,{
     .#{$bgColor}{
         @if $bgColor == bgColorYellow{
             background: $amarillo;
@@ -54,7 +54,10 @@
             background: $rojo;
         }@else if $bgColor == bgColorBlue{
             background: $azul;
-        }@else{
+        }@else if $bgColor == bgColorWhite{
+            background: $blanco;
+        }
+        @else{
             background: $negro;
         }
     }
