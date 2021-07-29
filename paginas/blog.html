@@ -3,39 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link href="../media/logo.svg" rel="icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
 	<title>Blog Platino</title>
 </head>
 <body>
-	<div id="cabecera">
-        <header id="header" class="fixed-top bgColorBlack">
+	<div class="encabezado w-100">
+        <header id="header" class="fixed-top bgColorBlack w-100">
             <div class="container">
-        
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="" class="img-fluid"></a>
-            </div>
-        
+                <div class="logo float-left">
+                    <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="residencias"
+                    class="img-fluid"></a>
+                </div>
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="../index.html#nosotros">Nosotros</a></li>
-                        
-                
                         <li class="drop-down"><a href="../index.html#propiedades">Propiedades</a>
-                            <ul class="mt-2">
-                            <li><a href="../paginas/propiedades.html">Casas</a></li>
-                            <li><a href="../paginas/propiedades.html">Departamentos</a></li>
-                            <li><a href="../paginas/propiedades.html">Condominios</a></li>
-                            <li><a href="../paginas/propiedades.html">Propiedades</a></li>
-                        
+                            <ul>
+                            <li><a href="../paginas/propiedades.html">Ver Todas</a></li>
                             </ul>
                         </li>          
-                
                         <li class="drop-down"><a href="../index.html#servicios">Servicios</a>
-                            <ul class="mt-2">
+                            <ul>
                             <li><a href="../paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="../paginas/servicios.html#Tasaciones">
@@ -47,31 +39,26 @@
                             <li><a href="../paginas/servicios.html#Geologia">
                                 Geología</a></li></li>
                             </ul>
-                        </li>         
-
+                        </li>        
                         <li><a href="../index.html#agentes">Agentes</a></li>
-                
                         <li class="drop-down"><a href="../paginas/blog.html">Blog</a>
-                            <ul class="mt-2">
+                            <ul>
                             <li><a href="../paginas/blog.html">Conocer Mas</a></li>
                             </ul>
                         </li>   
-                
                         <li ><a href="../index.html#contacto">Contacto</a></li>
-                    
-            
                     </ul>
                 </nav>  
             </div>
         </header>
     </div>
-    <div class="pagBlog">
-        <div class="contBlogPag">
-            <h2 class="typeR bold colorBlack">Blog</h2>
+    <section class="pagBlog">
+        <div class="contBlogPag colorBlack">
+            <h2 class="typeBold">Blog</h2>
             <div class="blogPag">
                 <h3 class="typeR">Guía para comprar</h3>
                 <p>Escrito el: <span>20/10/2021</span> por: <span>Susana Estevez</span></p>
-                <img src="../media/blog-img1.jpg" alt="blog-img1">
+                <img src="../media/blog-inicio.jpg" alt="blog-inicio">
                 <p>Comprar una propiedad implica un gran esfuerzo y es un paso muy importante en la vida de las 
                 personas, por eso, acá te dejamos una guía con los pasos y todos los datos útiles que tenés que 
                 conocer para que la operación sea todo un éxito.</p>
@@ -85,7 +72,7 @@
                 </ul>
                 <div class="indice">
                     <h4 class="typeR">La búsqueda</h4>
-                    <img src="../media/blog-img2.jpg" alt="blog-img2">
+                    <img src="../media/blog-busq.jpg" alt="blog-busq">
                     <p>Para buscar el inmueble ideal que cumpla con todas tus necesidades te recomendamos que 
                     respondas previamente estas preguntas que van a guiarte en tu decisión.</p>
                     <ul class="blog-list">
@@ -116,14 +103,14 @@
                         <li><p>Consultar por la calefacción y ventilación.</p></li>
                     </ul>
                     <h4 class="typeR">La oferta</h4>
-                    <img src="../media/blog-img3.jpg" alt="blog-img3">
+                    <img src="../media/blog-oferta.jpg" alt="blog-oferta">
                     <p>Cuando encontrás la propiedad que cumple con todos los requisitos que necesitabas y se 
                     ajusta al valor que podés pagar, es momento de hacer una oferta. La oferta refleja la voluntad 
                     de compra y funciona a modo de reserva, la cual el vendedor puede aceptar o rechazar. En caso 
                     de aceptar, el inmueble debe sacarse de la venta para seguir con los trámites correspondientes 
                     a la compra; en caso de arrepentirse, el vendedor deberá devolver el monto de dinero entregado.</p>
                     <h4 class="typeR">La firma del boleto de compra-venta</h4>
-                    <img src="../media/blog-img4.jpg" alt="blog-img4">
+                    <img src="../media/blog-boleto.jpg" alt="blog-boleto">
                     <p>Una vez que ambas partes se comprometen a continuar con la operación, se firma el boleto de 
                     compra-venta. Se trata de un documento que refleja la promesa bilateral, comprometiendo al 
                     vendedor a vender y a vos a efectuar la compra, es decir, a proceder a la escrituración. Además, 
@@ -136,7 +123,7 @@
                     no siempre se realiza, sino que muchas veces se lleva adelante la escrituración directa.
                     </p>
                     <h4 class="typeR">La escrituración</h4>
-                    <img src="../media/blog-img5.jpg" alt="blog-img5">
+                    <img src="../media/blog-escrit.jpg" alt="blog-escrit">
                     <p>Es el acto formal que establece la compra y venta de la propiedad donde la operación queda 
                     efectuada. Recordá que como comprador podés elegir qué escribano querés que lleve adelante la 
                     operación y es uno de los gastos que debés afrontar y contemplar. Antes de la escrituración, 
@@ -150,7 +137,7 @@
                         <li><p>Fotocopias de DNI y la constancia de CUIL/CUIT del comprador, vendedor  y sus 
                         convivientes o cónyuges cuando corresponda.</p></li>
                     </ul>
-                    <p class="espaciob">Importante: Tené en cuenta que si alguno de los firmantes no concurriere a la firma de la 
+                    <p>Importante: Tené en cuenta que si alguno de los firmantes no concurriere a la firma de la 
                     escritura es necesario el poder original y con las facultades suficientes del mismo para el 
                     acto.</p>
                     <ul class="blog-list">
@@ -166,7 +153,7 @@
                         al bien de familia, si levantó la inhibición o sólo fue para el efecto de la escritura.
                         </p></li>
                     </ul>
-                    <p class="espaciob">También, es importante tener en cuenta:</p>
+                    <p>También, es importante tener en cuenta:</p>
                     <ul class="blog-list">
                         <li><p>Certificado de no retención del Impuesto a la Transferencia de Inmueble (ITI): es 
                         un certificado que permite quedar exento del ITI, un impuesto nacional a la transferencia
@@ -184,7 +171,7 @@
                         debe ser obtenido por el propietario mediante la página web de AFIP previo a la escrituración,
                         siempre que el valor del inmueble sea superior a $1.500.000.</p></li>
                     </ul>
-                    <p class="espaciob">En el caso de ser un inmueble afectado a la propiedad horizontal también es requisito:</p>
+                    <p>En el caso de ser un inmueble afectado a la propiedad horizontal también es requisito:</p>
                     <ul class="blog-list">
                         <li><p>Una copia del reglamento de copropiedad y administración, o del reglamento de 
                         propiedad horizontal.</p></li>
@@ -192,7 +179,7 @@
                         <li><p>El libre de deuda de expensas</p></li>
                         <li><p>En algunos casos, el plano de afectación a propiedad horizontal.</p></li>
                     </ul>
-                    <p class="espaciob">Si el inmueble que se va a vender está ubicado en la provincia de Buenos Aires es necesario
+                    <p>Si el inmueble que se va a vender está ubicado en la provincia de Buenos Aires es necesario
                     contar con</p>
                     <ul class="blog-list">
                         <li><p>El Estado Parcelario, un trámite para evaluar la superficie, la medición, 
@@ -201,7 +188,7 @@
                         <li><p>Una fotocopia de un impuesto de ARBA, Impuesto Municipal y Aguas.</p></li>
                     </ul>
                     <h4 class="typeR">El pago</h4>
-                    <img src="../media/blog-img6.jpg" alt="blog-img6">
+                    <img src="../media/blog-pago.jpg" alt="blog-pago">
                     <p>Se realiza junto con la escrituración, allí queda asentada la entrega real y efectiva del 
                     inmueble. Es posible acordar la división de gastos, pero, de acuerdo a los usos y costumbres,
                     los gastos que debés afrontar como comprador de un inmueble son aquellos generados por la 
@@ -220,7 +207,7 @@
             <div class="blogPag1">
                 <h3 class="typeR">Cuatro tendencias para renovar tu habitación</h3>
                 <p>Escrito el: <span>20/10/2021</span> por: <span>Alvara Machado</span></p>
-                <img src="../media/blog-img7.jpg" alt="blog-img7">
+                <img src="../media/blog-habit.jpg" alt="blog-habit">
                 <p>Dormitorio, habitación, minimalista, moderna, tendencia y led, son búsquedas que se dispararon 
                 en el último tiempo. La reconfiguración del hogar obligó a pensar cómo hacer de este espacio, 
                 ahora multifunción y habitado las 24 horas, un ambiente de trabajo, estudio y descanso bajo las 
@@ -229,7 +216,7 @@
                 minimalista y lo tecnológico, son estilos muy distintos entre sí, pero que comparten algunos 
                 elementos, que según la combinación que se les dé, revitalizan ambientes de manera muy sencilla.</p>
                 <h4 class="typeR">Botánica de interior</h4>
-                <img src="../media/blog-img8.jpg" alt="blog-img8">
+                <img src="../media/blog-botanica.jpg" alt="blog-botanica">
                 <p>En un momento en el que se perdió la conexión con la naturaleza, la tendencia que pisa con 
                 fuerza este año propone recuperar el vínculo entre el ser humano y lo natural. La botánica 
                 coloniza los espacios de la casa y la búsqueda por materiales del ambiente exterior y orgánico 
@@ -243,21 +230,21 @@
                 con distintos materiales, imitan especies muy similares al aspecto de una planta real. Tienen
                 algunos beneficios como, por ejemplo, el hecho de no requerir cuidados especiales ni de 
                 cualidades particulares</p>
-                <img src="../media/blog-img9.jpg" alt="blog-img9">
+                <img src="../media/blog-florero.jpg" alt="blog-florero">
                 <h4 class="typeR">Luces Led</h4>
-                <img src="../media/blog-img10.jpg" alt="blog-img10">
+                <img src="../media/blog-led.jpg" alt="blog-led">
                 <p>Tiras de luces que recorren de punta a punta una pared, alrededor de espejos y de fotos 
                 colgadas. Sus distintos formatos permiten generar rincones cálidos, con colores, iluminar 
                 techos y cabezales de habitaciones. Una idea versátil y de bajo consumo que se adapta muy bien 
                 tanto a un estilo gamer, como a un estilo chic y natural.</p>
                 <h4 class="typeR">Espejos</h4>
-                <img src="../media/blog-img11.jpg" alt="blog-img11">
+                <img src="../media/blog-espejo.jpg" alt="blog-espejo">
                 <p>Si de iluminación hablamos, los espejos son un elemento fundamental para dar luminosidad a 
                 los espacios. La nueva moda muestra la llegada de espejos amorfos, únicos y originales que 
                 descontractura ambientes, la preponderancia del formato circular y de los espejos hexagonales 
                 que funciona a la perfección para distribuir en las paredes o crear un diseño particular.</p>
                 <h4 class="typeR">Vinilos</h4>
-                <img src="../media/blog-img12.jpg" alt="blog-img12">
+                <img src="../media/blog-vinilo.jpg" alt="blog-vinilo">
                 <p class="borde">Mejorar una pared nunca fue tan fácil, los vinilos decorativos y autoadhesivos son sencillos 
                 de colocar en cualquier tipo de superficie, también son simples de limpiar y cuidar. Se trata 
                 de un producto con múltiples variedades de patrones, estampas e ilustraciones que hasta se 
@@ -266,12 +253,12 @@
                 en simples pasos.</p>
             </div>
         </div>
-    </div>
-    <div id="footer">
-        <div id="contFoot" class="bgColorBlack">
+    </section>
+    <footer id="footer">
+        <div class="contFoot bgColorBlack">
             <div class="arriba colorWhite">
                 <div class="cont-info">
-                    <h3 class="typeR">Contacto</h3>
+                    <h3 class="typeR pb-3">Contacto</h3>
                     <ul class="orden-pri">
                         <li><p>Llavallol</p></li>
                         <li><p>Almirante Segui 2249</p></li>
@@ -285,30 +272,33 @@
                     </ul>
                 </div>
                 <div class="cont-apps">
-                    <h3 class="typeR">Apps</h3>
+                    <h3 class="typeR pb-1">Apps</h3>
                     <ul class="orden-seg">
-                        <li><img src="../media/google.svg" alt="Google Play"></li>
-                        <li><img src="../media/apple.svg" alt="Apple Store"></li>  
+                        <li><img src="../media/google.svg" alt="google"></li>
+                        <li><img src="../media/apple.svg" alt="apple"></li>  
                     </ul>
                 </div>
                 <div class="cont-redes">
                     <h3 class="typeR">Redes Sociales</h3>
                     <ul class="orden-ter">
-                        <li><img src="../media/facebook.png" alt="Facebook"></li>
-                        <li><img src="../media/instagram.png" alt="Instagram"></li>
-                        <li><img src="../media/twitter.png" alt="Twitter"></li>
+                        <li><img src="../media/facebook.png" alt="facebook"></li>
+                        <li class="pr-4 pl-4"><img src="../media/instagram.png" alt="instagram"></li>
+                        <li><img src="../media/twitter.png" alt="twitter"></li>
                     </ul>
                 </div>
             </div>
-            <div class="cont-final typeOs semiBold colorWhite">
+            <div class="cont-final semiBold colorWhite">
                 <p>Todos los Derechos Reservados 2021</p>
-                <img src="../media/copy.png" alt="copyright">
+                <img src="../media/copy.png" alt="copy">
             </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="../bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 </html>

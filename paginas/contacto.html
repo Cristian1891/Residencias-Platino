@@ -3,39 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link href="../media/logo.svg" rel="icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
 	<title>Contacto Platino</title>
 </head>
 <body>
-	<div id="cabecera">
-        <header id="header" class="fixed-top bgColorBlack">
+	<div class="encabezado w-100">
+        <header id="header" class="fixed-top bgColorBlack w-100">
             <div class="container">
-        
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="" class="img-fluid"></a>
-            </div>
-        
+                <div class="logo float-left">
+                    <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="residencias"
+                    class="img-fluid"></a>
+                </div>
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="../index.html#nosotros">Nosotros</a></li>
-                        
-                
                         <li class="drop-down"><a href="../index.html#propiedades">Propiedades</a>
-                            <ul class="mt-2">
-                            <li><a href="../paginas/propiedades.html">Casas</a></li>
-                            <li><a href="../paginas/propiedades.html">Departamentos</a></li>
-                            <li><a href="../paginas/propiedades.html">Condominios</a></li>
-                            <li><a href="../paginas/propiedades.html">Propiedades</a></li>
-                        
+                            <ul>
+                            <li><a href="../paginas/propiedades.html">Ver Todas</a></li>
                             </ul>
                         </li>          
-                
                         <li class="drop-down"><a href="../index.html#servicios">Servicios</a>
-                            <ul class="mt-2">
+                            <ul>
                             <li><a href="../paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="../paginas/servicios.html#Tasaciones">
@@ -47,32 +39,27 @@
                             <li><a href="../paginas/servicios.html#Geologia">
                                 Geología</a></li></li>
                             </ul>
-                        </li>         
-
+                        </li>        
                         <li><a href="../index.html#agentes">Agentes</a></li>
-                
                         <li class="drop-down"><a href="../index.html#blog">Blog</a>
-                            <ul class="mt-2">
+                            <ul>
                             <li><a href="../paginas/blog.html">Conocer Mas</a></li>
                             </ul>
                         </li>   
-                
                         <li ><a href="../index.html#contacto">Contacto</a></li>
-                    
-            
                     </ul>
                 </nav>  
             </div>
         </header>
     </div>
-    <div class="contacto">
-        <h2 class="typeR bold colorBlack">Contacto</h2>
-        <div class="cont-pagContacto">
+    <section class="contacto">
+        <h2 class="typeBold colorBlack">Contacto</h2>
+        <div class="cont-pagContacto colorBlack">
             <img src="../media/destacada3.jpg" alt="destacada3">
-            <h3 class="typeR bold colorBlack">Llene el formulario de Contacto</h3>
+            <h3 class="typeBold">Llene el formulario de Contacto</h3>
             <form class="cont-form" action="../paginas/recibe.html" method="POST" enctype="multipart/form-data">
                 <fieldset class="border border-dark px-3 pt-2 pb-4 my-5">
-                    <legend class="typeOs semiBold colorBlack w-auto">Información Personal</legend>
+                    <legend class="semiBold w-auto">Información Personal</legend>
                     <label class="pt-0" for="nombre">Nombre:</label>
                     <input class="border border-light rounded p-2" type="text" 
                     placeholder="Tu Nombre" autocomplete="off" required>
@@ -91,12 +78,10 @@
 
                     <label for="mensaje">Mensaje: </label>
                     <textarea class="border border-light rounded" placeholder="Tu Mensaje" required></textarea>
-
                 </fieldset>
                     
-
                 <fieldset class="border border-dark px-3 pt-2 pb-4 my-5">
-                    <legend class="typeOs semiBold colorBlack w-auto">Información sobre Propiedad</legend>
+                    <legend class="semiBold w-auto">Información sobre Propiedad</legend>
                     <label for="opciones">Operación:</label>
                     <select id="opciones" class="border border-light rounded p-2">
                         <option value="" disabled selected>-- Seleccione --</option>
@@ -109,7 +94,7 @@
                     <input class="border border-light rounded p-2" type="number" min="0" max="1000000" 
                     step="50000">
 
-                    <p class="typeOs colorBlack pt-3">Como desea ser Contactado:</p>
+                    <p class="typeOs pt-3">Como desea ser Contactado:</p>
 
                     <div class="forma-contacto pb-3">
                         <label class="pt-0" for="telefono">Teléfono</label>
@@ -119,7 +104,7 @@
                         <input type="radio" name="contacto" value="correo">
                     </div>
 
-                    <p class="typeOs colorBlack">Si eligió Teléfono, elija la fecha y la hora:</p>
+                    <p class="typeOs">Si eligió Teléfono, elija la fecha y la hora:</p>
                     <label class="pt-0" for="fecha">Fecha:</label>
                     <input class="border border-light rounded p-2" type="date" id="fecha">
 
@@ -130,15 +115,14 @@
 
                 <input type="submit" name="sube_form" value="Enviar" class="boton1 bgColorRed colorWhite mr-3">
                 <input type="reset" name="resetear" value="Borrar todo" class="boton1 bgColorRed colorWhite ml-2">
-
             </form>
         </div>
-    </div>
-    <div id="footer">
-        <div id="contFoot" class="bgColorBlack">
+    </section>
+    <footer id="footer">
+        <div class="contFoot bgColorBlack">
             <div class="arriba colorWhite">
                 <div class="cont-info">
-                    <h3 class="typeR">Contacto</h3>
+                    <h3 class="typeR pb-3">Contacto</h3>
                     <ul class="orden-pri">
                         <li><p>Llavallol</p></li>
                         <li><p>Almirante Segui 2249</p></li>
@@ -152,30 +136,33 @@
                     </ul>
                 </div>
                 <div class="cont-apps">
-                    <h3 class="typeR">Apps</h3>
+                    <h3 class="typeR pb-1">Apps</h3>
                     <ul class="orden-seg">
-                        <li><img src="../media/google.svg" alt="Google Play"></li>
-                        <li><img src="../media/apple.svg" alt="Apple Store"></li>  
+                        <li><img src="../media/google.svg" alt="google"></li>
+                        <li><img src="../media/apple.svg" alt="apple"></li>  
                     </ul>
                 </div>
                 <div class="cont-redes">
                     <h3 class="typeR">Redes Sociales</h3>
                     <ul class="orden-ter">
-                        <li><img src="../media/facebook.png" alt="Facebook"></li>
-                        <li><img src="../media/instagram.png" alt="Instagram"></li>
-                        <li><img src="../media/twitter.png" alt="Twitter"></li>
+                        <li><img src="../media/facebook.png" alt="facebook"></li>
+                        <li class="pr-4 pl-4"><img src="../media/instagram.png" alt="instagram"></li>
+                        <li><img src="../media/twitter.png" alt="twitter"></li>
                     </ul>
                 </div>
             </div>
-            <div class="cont-final typeOs semiBold colorWhite">
+            <div class="cont-final semiBold colorWhite">
                 <p>Todos los Derechos Reservados 2021</p>
-                <img src="../media/copy.png" alt="copyright">
+                <img src="../media/copy.png" alt="copy">
             </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="../bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script> 
+    <script src="../lib/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 </html>

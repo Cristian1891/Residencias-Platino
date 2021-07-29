@@ -1,0 +1,194 @@
+/*Servicios*/
+
+@include smartphones{
+	.cont-serv{
+        font-size: 12px;
+        padding: 5em 1rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+    .cont-serv h2{
+        font-size: 24px;
+    }
+    #cont-general{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #cont-general1{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #cont-general2{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido-serv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex: 0 0 calc(45% - 1rem);
+        padding: 2em 3rem;
+        max-width: 340px;
+        margin-bottom: 2em;
+    }
+    .contenido-serv1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 calc(50% - 1rem);
+        padding: 2em 3rem;
+        max-width: 340px;
+        margin-bottom: 2em;
+    }
+    .ocult-serv{
+        display: none;
+    }
+    .contenido-serv h3{
+        padding-bottom: 1em;
+        font-size: 20px;
+    }
+    .contenido-serv1 h3{
+        padding-bottom: 1em;
+        font-size: 20px;
+    }
+    .cont-gener p{
+        margin: 2em 0 2em 0;
+    }
+    .serv-img img{
+        width: 100%;
+        height: 200px;
+    }
+    .slide{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3em 0 5em 0;
+    }
+}
+
+@include movil{
+	.cont-serv{
+        font-size: 14px;
+    }
+    .cont-serv h2{
+        font-size: 26px;
+    }
+    .contenido-serv h3{
+        font-size: 22px;
+    }
+    .contenido-serv1 h3{
+        font-size: 22px;
+    }
+    .serv-img img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
+@include tablet{
+	.cont-serv{
+        font-size: 16px;
+    }
+    .cont-serv h2{
+        font-size: 28px;
+    }
+    #cont-general{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    #cont-general1{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .contenido-serv{
+        justify-content: flex-start;
+        margin-bottom: 0;
+        max-width: 550px;
+    }
+    .contenido-serv1{
+        margin-bottom: 0;
+        max-width: 550px;
+    }
+    .contenido-serv h3{
+        font-size: 24px;
+    }
+    .contenido-serv1 h3{
+        font-size: 24px;
+    }
+    .serv-img img{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@include desktop{
+	.cont-serv{
+        font-size: 18px;
+    }
+    .cont-serv h2{
+        font-size: 30px;
+    }
+    .contenido-serv{
+        justify-content: space-evenly;
+        max-width: 600px;
+    }
+    .contenido-serv1{
+        max-width: 600px;
+    }
+    .contenido-serv h3{
+        font-size: 26px;
+    }
+    .contenido-serv1 h3{
+        font-size: 26px;
+    }
+    .serv-img img{
+        width: 100%;
+        height: 300px;
+    }
+} 
+
+@include large-desktop{
+	.cont-serv{
+        font-size: 20px;
+    }
+    .cont-serv h2{
+        font-size: 32px;
+    }
+    #cont-general{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    #cont-general1{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .contenido-serv{
+        max-width: 600px;
+    }
+    .contenido-serv1{
+        max-width: 600px;
+    }
+    .contenido-serv h3{
+        font-size: 28px;
+    }
+    .contenido-serv1 h3{
+        font-size: 28px;
+    }
+    .serv-img img{
+        width: 100%;
+        height: 300px;
+    }
+}

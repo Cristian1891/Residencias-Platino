@@ -1,0 +1,113 @@
+/*Nosotros*/
+
+@include smartphones{
+    .cont-nos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 12px;
+        padding: 4em 3rem 5em 3rem;
+        overflow: hidden;
+    }
+    .cont-der{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 2rem 0 0 0;
+    }
+    .cont-izq{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    .cont-izq h2{
+        font-size: 24px;
+    } 
+    .cont-der img{
+        width: 100%;
+        max-height: 300px;
+    }
+    .boton{
+        padding: 1rem 2rem;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+    
+    .boton:hover {
+        background-color: #ffff00;
+        color: #000000;
+    }
+}
+
+@include movil{
+    .cont-nos{
+        padding: 4em 8rem 5em 8rem;
+        font-size: 14px;
+    }
+    .cont-izq h2{
+        font-size: 26px;
+    } 
+}
+
+
+@include tablet{
+    .cont-nos{
+        padding: 4em 10rem 5em 10rem;
+        font-size: 16px;
+    }
+    .cont-izq h2{
+        font-size: 28px;
+    } 
+    .cont-der img{
+        max-height: 600px;
+    }
+}
+
+@include desktop{
+    .cont-nos{
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 4em 0 5em 0;
+        font-size: 18px;
+    }   
+    .cont-der{
+        padding: 0 3rem 2rem 0;
+    } 
+    .cont-izq{
+        align-items: flex-start;
+        padding: 0 6rem 0 4rem;
+    }
+    .cont-izq h2{
+        font-size: 30px;
+    }   
+    .cont-der img{
+        width: 500px;
+        max-height: 270px;
+    }
+    .boton{
+        width: auto;
+    }
+} 
+
+@include large-desktop{
+    .cont-nos{
+        font-size: 20px;
+        padding: 4em 0 5em 0;
+    }
+    .cont-der img{
+        max-width: 500px;
+    }   
+    .cont-izq{
+        padding: 0 7rem 0 6rem;
+    }  
+    .cont-izq h2{
+        font-size: 32px;
+    }
+} 
+
+

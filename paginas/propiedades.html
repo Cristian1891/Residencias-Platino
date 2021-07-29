@@ -3,39 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../media/logo.svg" rel="icon">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/7ca5c60032.js" crossorigin="anonymous"></script>
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
 	<title>Propiedades Platino</title>
 </head>
 <body>
-	<div id="cabecera">
-        <header id="header" class="fixed-top bgColorBlack">
+	<div class="encabezado w-100">
+        <header id="header" class="fixed-top bgColorBlack w-100">
             <div class="container">
-        
-            <div class="logo float-left">
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-                <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="" class="img-fluid"></a>
-            </div>
-        
+                <div class="logo float-left">
+                    <a href="../index.html" class="scrollto"><img src="../media/residencias.svg" alt="residencias" 
+                    class="img-fluid"></a>
+                </div>
                 <nav class="main-nav float-right d-none d-lg-block">
                     <ul>
                         <li class="active"><a href="../index.html#nosotros">Nosotros</a></li>
-                        
-                
                         <li class="drop-down"><a href="../paginas/propiedades.html">Propiedades</a>
-                            <ul class="mt-2">
-                            <li><a href="../paginas/propiedades.html">Casas</a></li>
-                            <li><a href="../paginas/propiedades.html">Departamentos</a></li>
-                            <li><a href="../paginas/propiedades.html">Condominios</a></li>
-                            <li><a href="../paginas/propiedades.html">Propiedades</a></li>
-                        
+                            <ul>
+                            <li><a href="../paginas/propiedades.html">Ver Todas</a></li>
                             </ul>
-                        </li>          
-                
+                        </li>         
                         <li class="drop-down"><a href="../index.html#servicios">Servicios</a>
-                            <ul class="mt-2">
+                            <ul>
                             <li><a href="../paginas/servicios.html#Administracion">
                             Administración de Propiedades</a></li></li>
                             <li><a href="../paginas/servicios.html#Tasaciones">
@@ -47,396 +39,439 @@
                             <li><a href="../paginas/servicios.html#Geologia">
                                 Geología</a></li></li>
                             </ul>
-                        </li>         
-
+                        </li>        
                         <li><a href="../index.html#agentes">Agentes</a></li>
-                
                         <li class="drop-down"><a href="../index.html#blog">Blog</a>
-                            <ul class="mt-2">
+                            <ul>
                             <li><a href="../paginas/blog.html">Conocer Mas</a></li>
                             </ul>
                         </li>   
-                
                         <li ><a href="../index.html#contacto">Contacto</a></li>
-                    
-            
                     </ul>
                 </nav>  
             </div>
         </header>
     </div>
-    <div id="casas">
-    	<div class="casa-cont">
-    		<h2 class="typeR bold">Propiedades</h2>
-            <div class="navegacion typeOs semiBold colorBlack">
-                <ul class="secciones">
-                    <li><a href="#" class="boton1 colorWhite bgColorRed" id="btnProp">Casas</a></li>
-                    <li><a href="#" class="boton1 bgColorBlack colorRed" id="btnProp1">Departamentos</a></li>
-                    <li><a href="#" class="boton1 bgColorBlack colorRed" id="btnProp2">Condominios
+    <section id="residencias">
+    	<div class="casa-cont colorBlack">
+    		<h2 class="typeBold">Propiedades</h2>
+            <div class="navegacion semiBold">
+                <ul class="seccionesRes">
+                    <li><a href="#casa-propiet" class="boton1 colorWhite bgColorRed">Casas</a></li>
+                    <li><a href="#depto-propiet" class="boton1 bgColorBlack colorRed">Departamentos</a></li>
+                    <li><a href="#cond-propiet" class="boton1 bgColorBlack colorRed">Condominios
                     </a></li>
-                    <li><a href="#" class="boton1 bgColorBlack colorRed" id="btnProp3">Locales</a>
+                    <li><a href="#local-propiet" class="boton1 bgColorBlack colorRed">Locales</a>
                     </li>
                 </ul>
             </div>
-            <div id="casa-propiet">
-                 <div class="propiet">
-                    <img src="../media/casa1.jpg" alt="Propiedad 1">
+            <div id="casa-propiet" class="info-propiedad ocult-propiedad">
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/casaBanfield.jpg" alt="casaBanfield">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$90.000</p>
+                        <p>Manuel Castro al 800</p>
+                        <p>Banfield, Lomas de Zamora.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>375m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>5amb</p>
+                        </ul>
+                        <p>Excelente casa en alquiler. Banfield Oeste.</p>
+                        <a href="../paginas/casaBanfield.html" class="boton bgColorYellow semiBold colorBlack">Ver 
+                        Propiedad</a>
+                    </div>
                 </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">$90.000</p>
-                    <p class="pr">Manuel Castro al 800</p>
-                    <p>Banfield, Lomas de Zamora.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>375m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>5amb</p>
-                    </ul>
-                    <p>Excelente casa en alquiler. Banfield Oeste.</p>
-                    <a href="../paginas/casa1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/casaBelgrano.jpg" alt="casaBelgrano">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 1.350.000</p>
+                        <p>Pampa al 300</p>
+                        <p>Belgrano R, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>5</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>473m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>9amb</p>
+                        </ul>
+                        <p>Casa en venta en Belgrano. Única por su estilo y arquitectura.</p>
+                        <a href="../paginas/casaBelgrano.html" class="boton bgColorYellow semiBold colorBlack">Ver 
+                        Propiedad</a>
+                    </div>
                 </div>
-                <div class="propiet">
-                    <img src="../media/casa2.jpg" alt="Propiedad 2">
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/casaRamos.jpg" alt="casaRamos">
+                    </div>    
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$ 100.000</p>
+                        <p>Garay 700</p>
+                        <p>Ramos Mejía, La Matanza.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>4</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>280m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>5amb</p>
+                        </ul>
+                        <p>Chalet en alquiler en Ramos Mejía - Barrio Pileta</p>
+                        <a href="../paginas/casaRamos.html" class="boton bgColorYellow semiBold colorBlack">Ver 
+                        Propiedad</a>
+                    </div>
                 </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 1.350.000</p>
-                    <p>Pampa al 300</p>
-                    <p>Belgrano R, Capital Federal.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>5</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>473m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>9amb</p>
-                    </ul>
-                    <p>Casa en venta en Belgrano. Única por su estilo y arquitectura.</p>
-                    <a href="../paginas/casa2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/casa3.jpg" alt="Propiedad 3">
-                </div>    
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 100.000</p>
-                    <p>Garay 700</p>
-                    <p>Ramos Mejía, La Matanza.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>4</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>280m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>5amb</p>
-                    </ul>
-                    <p>Chalet en alquiler en Ramos Mejía - Barrio Pileta</p>
-                    <a href="../paginas/casa3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/casa4.jpg" alt="Propiedad 4">
-                </div> 
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 6500</p>
-                    <p>Sevilla al 2900</p>
-                    <p>Palermo Chico, Palermo.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>450m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>10amb</p>
-                    </ul>
-                    <p>Casa en alquiler con jardin y pileta en Barrio Parque.</p>
-                    <a href="../paginas/casa4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-            </div>
-            <div id="casa-propiet1" class="ocultar">
-                <div class="propiet">
-                   <img src="../media/departamento1.jpg" alt="">
-               </div>
-               <div class="contenido-propiet">
-                   <p class="precio colorYellow">$ 67.000</p>
-                   <p class="pr">Acoyte al 5400</p>
-                   <p>Caballito, Capital Federal.</p>
-                   <ul class="iconos-propi colorBlack">
-                       <li><img src="../media/baño1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>3</p>
-                       <li><img src="../media/auto1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/medida1.png" alt=""></li>
-                       <p>86m²</p>
-                       <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>5amb</p>
-                   </ul>
-                   <p>Parque Centenario en alquiler. 5 ambientes.</p>
-                   <a href="../paginas/departamento1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-               </div>
-               <div class="propiet">
-                   <img src="../media/departamento2.jpg" alt="">
-               </div>
-               <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 1.200</p>
-                   <p>Quintana al 1500.</p>
-                   <p>Recoleta, Capital Federal.</p>
-                   <ul class="iconos-propi colorBlack">
-                       <li><img src="../media/baño1.png" alt=""></li>
-                       <p>2</p>
-                       <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>4</p>
-                       <li><img src="../media/auto1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/medida1.png" alt=""></li>
-                       <p>140m²</p>
-                       <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>7amb</p>
-                   </ul>
-                   <p>Departamento en Alquiler en la mejor zona de Recoleta.</p>
-                   <a href="../paginas/departamento2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-               </div>
-               <div class="propiet">
-                   <img src="../media/departamento3.jpg" alt="">
-               </div>    
-               <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 130.000</p>
-                   <p>Barragan al 200</p>
-                   <p>Liniers, Capital Federal.</p>
-                   <ul class="iconos-propi colorBlack">
-                       <li><img src="../media/baño1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/auto1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/medida1.png" alt=""></li>
-                       <p>59m²</p>
-                       <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>2amb</p>
-                   </ul>
-                   <p>Departamento en Venta en Liniers.</p>
-                   <a href="../paginas/departamento3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-               </div>
-               <div class="propiet">
-                   <img src="../media/departamento4.jpg" alt="">
-               </div> 
-               <div class="contenido-propiet">
-                   <p class="precio colorYellow">USD 190.000</p>
-                   <p>Arribeños al 800</p>
-                   <p>Zárate, GBA Zona Norte.</p>
-                   <ul class="iconos-propi colorBlack">
-                       <li><img src="../media/baño1.png" alt=""></li>
-                       <p>2</p>
-                       <li><img src="../media/dormitorio1.png" alt=""></li>
-                       <p>3</p>
-                       <li><img src="../media/auto1.png" alt=""></li>
-                       <p>1</p>
-                       <li><img src="../media/medida1.png" alt=""></li>
-                       <p>80m²</p>
-                       <li><img src="../media/puerta1.png" alt=""></li>
-                       <p>4amb</p>
-                   </ul>
-                   <p>Departamento en Venta en Zárate.</p>
-                   <a href="../paginas/departamento4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-               </div>
-           </div>
-           <div id="casa-propiet2" class="ocultar">
-                <div class="propiet">
-                    <img src="../media/condominio1.jpg" alt="">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 490.000</p>
-                    <p class="pr">Carlos Calvo al 700</p>
-                    <p>San Telmo, Capital Federal</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>6</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>700m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>7amb</p>
-                    </ul>
-                    <p>Condominio en alquiler en San Telmo.</p>
-                    <a href="../paginas/condominio1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/condominio2.jpg" alt="">
-                </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 170.000</p>
-                    <p>Chile al 1700.</p>
-                    <p>Monserrat, Capital Federal.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>600m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>4amb</p>
-                    </ul>
-                    <p>Condominio en alquiler en Monserrat.</p>
-                    <a href="../paginas/condominio2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/condominio3.jpg" alt="">
-                </div>    
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 520.000</p>
-                    <p>Muelles 5</p>
-                    <p>Puertos, Escobar</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>4</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>800m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>6amb</p>
-                    </ul>
-                    <p>Condominio en Venta en Puertos.</p>
-                    <a href="../paginas/condominio3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
-                </div>
-                <div class="propiet">
-                    <img src="../media/condominio4.jpg" alt="">
-                </div> 
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 185.000</p>
-                    <p>El Cardenal al 2000.</p>
-                    <p>Derqui, Pilar.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/dormitorio1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>1000m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>3amb</p>
-                    </ul>
-                    <p>Condominio en Venta en Derqui.</p>
-                    <a href="../paginas/condominio4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/casaPalermo.jpg" alt="casaPalermo">
+                    </div> 
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 6500</p>
+                        <p>Sevilla al 2900</p>
+                        <p>Palermo Chico, Palermo.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>450m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>10amb</p>
+                        </ul>
+                        <p>Casa en alquiler con jardin y pileta en Barrio Parque.</p>
+                        <a href="../paginas/casaPalermo.html" class="boton bgColorYellow semiBold colorBlack">Ver 
+                        Propiedad</a>
+                    </div>
                 </div>
             </div>
-            <div id="casa-propiet3" class="ocultar">
-                <div class="propiet">
-                    <img src="../media/local1.jpg" alt="">
+            <div id="depto-propiet" class="info-propiedad ocult-propiedad">
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/deptoCaballito.jpg" alt="deptoCaballito">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$ 67.000</p>
+                        <p>Acoyte al 5400</p>
+                        <p>Caballito, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>86m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>5amb</p>
+                        </ul>
+                        <p>Parque Centenario en alquiler. 5 ambientes.</p>
+                        <a href="../paginas/deptoCaballito.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
                 </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 400.000</p>
-                    <p class="pr">Av Libertador al 3000</p>
-                    <p>Olivos, Vicente López</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>650m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>4amb</p>
-                    </ul>
-                    <p>Excelente local en alquiler en Olivos.</p>
-                    <a href="../paginas/local1.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/deptoRecoleta.jpg" alt="deptoRecoleta">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 1.200</p>
+                        <p>Quintana al 1500.</p>
+                        <p>Recoleta, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>4</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>140m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>7amb</p>
+                        </ul>
+                        <p>Departamento en Alquiler en la mejor zona de Recoleta.</p>
+                        <a href="../paginas/deptoRecoleta.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
                 </div>
-                <div class="propiet">
-                    <img src="../media/local2.jpg" alt="">
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/deptoLiniers.jpg" alt="deptoLiniers">
+                    </div>    
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 130.000</p>
+                        <p>Barragan al 200</p>
+                        <p>Liniers, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>59m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>2amb</p>
+                        </ul>
+                        <p>Departamento en Venta en Liniers.</p>
+                        <a href="../paginas/deptoLiniers.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
                 </div>
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">$ 45.000</p>
-                    <p>Libertad al 3500</p>
-                    <p>Retiro, Capital Federal</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>1</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>70m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>2amb</p>
-                    </ul>
-                    <p>Local en alquiler en Retiro.</p>
-                    <a href="../paginas/local2.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/deptoZarate.jpg" alt="deptoZarate">
+                    </div> 
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 190.000</p>
+                        <p>Arribeños al 800</p>
+                        <p>Zárate, GBA Zona Norte.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>80m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>4amb</p>
+                        </ul>
+                        <p>Departamento en Venta en Zárate.</p>
+                        <a href="../paginas/deptoZarate.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
                 </div>
-                <div class="propiet">
-                    <img src="../media/local3.jpg" alt="">
-                </div>    
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 5.000.000</p>
-                    <p>Av. Cabildo al 7000</p>
-                    <p>Colegiales, Capital Federal.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>4</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>2450m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>10amb</p>
-                    </ul>
-                    <p>Local en Venta en Colegiales.</p>
-                    <a href="../paginas/local3.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+            </div>
+            <div id="cond-propiet" class="info-propiedad ocult-propiedad">
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/condSanTelmo.jpg" alt="condSanTelmo">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$ 490.000</p>
+                        <p>Carlos Calvo al 700</p>
+                        <p>San Telmo, Capital Federal</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>6</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>700m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>7amb</p>
+                        </ul>
+                        <p>Condominio en alquiler en San Telmo.</p>
+                        <a href="../paginas/condSanTelmo.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
                 </div>
-                <div class="propiet">
-                    <img src="../media/local4.jpg" alt="">
-                </div> 
-                <div class="contenido-propiet">
-                    <p class="precio colorYellow">USD 95.000</p>
-                    <p>Mitre, Bartolome al 6200</p>
-                    <p>Almagro, Capital Federal.</p>
-                    <ul class="iconos-propi colorBlack">
-                        <li><img src="../media/baño1.png" alt=""></li>
-                        <p>3</p>
-                        <li><img src="../media/auto1.png" alt=""></li>
-                        <p>2</p>
-                        <li><img src="../media/medida1.png" alt=""></li>
-                        <p>780m²</p>
-                        <li><img src="../media/puerta1.png" alt=""></li>
-                        <p>7amb</p>
-                    </ul>
-                    <p>Local en Venta en Almagro.</p>
-                    <a href="../paginas/local4.html" class="boton bgColorYellow typeOs semiBold colorBlack">Ver Propiedad</a>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/condMonserrat.jpg" alt="condMonserrat">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$ 170.000</p>
+                        <p>Chile al 1700.</p>
+                        <p>Monserrat, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>600m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>4amb</p>
+                        </ul>
+                        <p>Condominio en alquiler en Monserrat.</p>
+                        <a href="../paginas/condMonserrat.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
+                </div>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/condPuertos.jpg" alt="condPuertos">
+                    </div>    
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 520.000</p>
+                        <p>Muelles 5</p>
+                        <p>Puertos, Escobar</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>4</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>800m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>6amb</p>
+                        </ul>
+                        <p>Condominio en venta en Puertos.</p>
+                        <a href="../paginas/condPuertos.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
+                </div>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/condDerqui.jpg" alt="condDerqui">
+                    </div> 
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 185.000</p>
+                        <p>El Cardenal al 2000.</p>
+                        <p>Derqui, Pilar.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/dormitorio-negro.png" alt="dormitorio-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>1000m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>3amb</p>
+                        </ul>
+                        <p>Condominio en Venta en Derqui.</p>
+                        <a href="../paginas/condDerqui.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
+                </div>
+            </div>
+            <div id="local-propiet" class="info-propiedad ocult-propiedad">
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/localOlivos.jpg" alt="localOlivos">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$ 400.000</p>
+                        <p class="pr">Av Libertador al 3000</p>
+                        <p>Olivos, Vicente López</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>650m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>4amb</p>
+                        </ul>
+                        <p>Excelente local en alquiler en Olivos.</p>
+                        <a href="../paginas/localOlivos.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
+                </div>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/localRetiro.jpg" alt="localRetiro">
+                    </div>
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">$ 45.000</p>
+                        <p>Libertad al 3500</p>
+                        <p>Retiro, Capital Federal</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>1</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>70m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>2amb</p>
+                        </ul>
+                        <p>Local en alquiler en Retiro.</p>
+                        <a href="../paginas/localRetiro.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
+                </div>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/localColegiales.jpg" alt="localColegiales">
+                    </div>    
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 5.000.000</p>
+                        <p>Av. Cabildo al 7000</p>
+                        <p>Colegiales, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>4</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>2450m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>10amb</p>
+                        </ul>
+                        <p>Local en Venta en Colegiales.</p>
+                        <a href="../paginas/localColegiales.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
+                </div>
+                <div class="casilla">
+                    <div class="propiet">
+                        <img src="../media/localAlmagro.jpg" alt="localAlmagro">
+                    </div> 
+                    <div class="contenido-propiet">
+                        <p class="precio colorYellow">USD 95.000</p>
+                        <p>Mitre, Bartolome al 6200</p>
+                        <p>Almagro, Capital Federal.</p>
+                        <ul class="iconos-propi colorBlack">
+                            <li><img src="../media/baño-negro.png" alt="baño-negro"></li>
+                            <p>3</p>
+                            <li><img src="../media/auto-negro.png" alt="auto-negro"></li>
+                            <p>2</p>
+                            <li><img src="../media/medida-negro.png" alt="medida-negro"></li>
+                            <p>780m²</p>
+                            <li><img src="../media/puerta-negro.png" alt="puerta-negro"></li>
+                            <p>7amb</p>
+                        </ul>
+                        <p>Local en Venta en Almagro.</p>
+                        <a href="../paginas/localAlmagro.html" class="boton bgColorYellow semiBold colorBlack">
+                        Ver Propiedad</a>
+                    </div>
                 </div>
             </div>
     	</div>
-    </div>
-    <div id="footer">
-        <div id="contFoot" class="bgColorBlack">
+    </section>
+    <footer id="footer">
+        <div class="contFoot bgColorBlack">
             <div class="arriba colorWhite">
                 <div class="cont-info">
-                    <h3 class="typeR">Contacto</h3>
+                    <h3 class="typeR pb-3">Contacto</h3>
                     <ul class="orden-pri">
                         <li><p>Llavallol</p></li>
                         <li><p>Almirante Segui 2249</p></li>
@@ -450,30 +485,33 @@
                     </ul>
                 </div>
                 <div class="cont-apps">
-                    <h3 class="typeR">Apps</h3>
+                    <h3 class="typeR pb-1">Apps</h3>
                     <ul class="orden-seg">
-                        <li><img src="../media/google.svg" alt="Google Play"></li>
-                        <li><img src="../media/apple.svg" alt="Apple Store"></li>  
+                        <li><img src="../media/google.svg" alt="google"></li>
+                        <li><img src="../media/apple.svg" alt="apple"></li>  
                     </ul>
                 </div>
                 <div class="cont-redes">
                     <h3 class="typeR">Redes Sociales</h3>
                     <ul class="orden-ter">
-                        <li><img src="../media/facebook.png" alt="Facebook"></li>
-                        <li><img src="../media/instagram.png" alt="Instagram"></li>
-                        <li><img src="../media/twitter.png" alt="Twitter"></li>
+                        <li><img src="../media/facebook.png" alt="facebook"></li>
+                        <li class="pr-4 pl-4"><img src="../media/instagram.png" alt="instagram"></li>
+                        <li><img src="../media/twitter.png" alt="twitter"></li>
                     </ul>
                 </div>
             </div>
-            <div class="cont-final typeOs semiBold colorWhite">
+            <div class="cont-final semiBold colorWhite">
                 <p>Todos los Derechos Reservados 2021</p>
-                <img src="../media/copy.png" alt="copyright">
+                <img src="../media/copy.png" alt="copy">
             </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="../bootstrap/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../lib/jquery/jquery-migrate.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../js/mobile-nav.js"></script>
     <script src="../js/script.js"></script>
 
 </body>

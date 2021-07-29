@@ -1,0 +1,82 @@
+/*Contacto*/
+
+@include smartphones{
+	#cont-contact{
+        background-image: url("../media/contacto.jpg");
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 600px; 
+        padding: 8rem 4rem 0 4rem;
+        font-size: 17px;
+        overflow: hidden;
+    }
+    #cont-contact h2{
+        font-size: 24px;  
+    }
+    #cont-contact a{
+        margin-top: 50px;
+    }
+    #cont-contact p{
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .boton-contact{
+        padding: 1rem 5rem;
+        display: inline-block;
+        text-align: center;
+        border: none;
+    }
+    .boton-contact:hover {
+        background-color: #ffff00;
+        color: #000000;
+    }
+}
+
+@include movil{
+	#cont-contact{
+        height: 650px; 
+        padding: 12rem 3rem 0 3rem;
+        font-size: 19px;
+    }
+    #cont-contact h2{
+        font-size: 26px;  
+    }
+}
+
+
+@include tablet{
+	#cont-contact{
+        font-size: 21px;
+    }
+    #cont-contact h2{
+        font-size: 28px; 
+    }
+}
+
+@include desktop{
+	#cont-contact{
+        font-size: 23px;
+    }
+    #cont-contact h2{
+        padding-bottom: 1em;
+        font-size: 30px;  
+    }
+    #cont-contact p{
+        text-align: center;
+        padding-top: 1em;
+    }
+} 
+
+@include large-desktop{
+	#cont-contact{
+        height: 650px; 
+        font-size: 25px;
+    }
+    #cont-contact h2{
+        font-size: 32px; 
+    }
+}

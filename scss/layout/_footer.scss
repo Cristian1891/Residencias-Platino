@@ -1,0 +1,114 @@
+/*Footer*/
+@include smartphones{
+	.contFoot{
+		font-size: 12px;
+		text-align: center;
+	}
+	.arriba{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 4rem;
+	}
+	.arriba h3{
+		font-size: 20px;
+	}
+	.cont-info p{
+		text-align: center;
+	}
+	.cont-apps{
+		padding: 2rem 0;
+	}
+	.orden-pri{
+		list-style-type: none;
+	}
+	.orden-seg{
+		list-style-type: none;
+	}
+	.orden-seg li img{
+		width: 150px;
+		height: 80px;
+	}
+	.orden-ter{
+		list-style-type: none;
+		padding-top: 1em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.orden-ter li img{
+		max-width: 100px;
+		max-height: 50px; 
+	}
+	.cont-final{
+		padding: 3rem 0;
+		text-align: center;
+	}
+	.cont-final p{
+		display: inline;
+		text-align: center;
+	}
+	.cont-final img{
+		max-width: 15px;
+		max-height: 15px;
+	}
+}
+
+@include movil{
+	.contFoot{
+		font-size: 14px;
+	}
+	.arriba h3{
+		font-size: 22px;
+	}
+}
+
+
+@include tablet{
+	.contFoot{
+		font-size: 16px;
+	}
+	.arriba h3{
+		font-size: 24px;
+	}
+}
+
+@include desktop{
+	.contFoot{
+		font-size: 18px;
+	}
+	.arriba{
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 4rem 7rem 0 7rem;
+	}
+	.cont-apps{
+		padding: 0;
+	}
+	.cont-info{
+		text-align: start;
+	}
+	.cont-info p{
+		text-align: start;
+	}
+	.cont-apps h3{
+		text-align: center;
+	}
+	.arriba h3{
+		font-size: 26px;
+	}
+	.cont-redes{
+		text-align: center;
+		padding-left: 4rem;
+	}
+} 
+
+@include large-desktop{
+	.contFoot{
+		font-size: 20px;
+	}
+	.arriba h3{
+		font-size: 28px;
+	}
+}

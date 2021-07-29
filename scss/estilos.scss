@@ -1,10 +1,24 @@
-@import "variables";
-@import "header";
-@import "index";
-@import "footer";
-@import "propiedades";
-@import "nosotros";
-@import "casa1";
-@import "servicios";
-@import "blog";
-@import "contacto";
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+
+/*UI*/
+@import 'layout/header';
+@import 'layout/navegacion';
+@import 'layout/seccion-principal';
+@import 'layout/nosotros';
+@import 'layout/propiedades';
+@import 'layout/servicios';
+@import 'layout/agentes';
+@import 'layout/blog';
+@import 'layout/testimoniales';
+@import 'layout/contacto';
+@import 'layout/footer';
+
+/*Internas*/
+@import 'internas/nosotros';
+@import 'internas/propiedades';
+@import 'internas/servicios';
+@import 'internas/blog';
+@import 'internas/contacto';
+@import 'internas/caracteristicas';

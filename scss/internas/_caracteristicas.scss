@@ -1,0 +1,139 @@
+/*Propiedades Caracteristicas*/
+
+@include smartphones{
+    .cont-descrip{
+		padding: 5rem 3rem;
+		font-size: 12px;
+		overflow: hidden;
+	}
+	.cont-descrip h2{
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 24px;
+	}
+	.contenido-up{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2em 0;
+		text-align: center;
+	}
+	.contenido-up h3{
+		padding: 2em 0;
+		font-size: 20px;
+		text-align: center;
+	}
+	.galeria{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+		list-style: none;
+		margin-bottom: 3em;
+	}
+	.galeria img{
+		width: 300px;
+		height: 200px;
+		margin-top: 3em;
+	}
+	.resto{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.aumento{
+		font-size: 16px;
+	}
+	.iconos-rest{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2em 0;
+	}
+	.iconos-rest li{
+		list-style: none;
+		padding: 0 1rem;
+	}
+	.iconos-rest li img{
+		width: 40px;
+		height: 30px;
+	}
+
+}
+
+@include movil{
+    .cont-descrip{
+		padding: 6rem 4rem;
+		font-size: 14px;
+	}
+	.cont-descrip h2{
+		font-size: 26px;
+	}
+	.contenido-up h3{
+		font-size: 22px;
+	}
+	.aumento{
+		font-size: 18px;
+	}
+	.iconos-rest{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+		margin: 2em 0;
+	}
+}
+
+
+@include tablet{
+	.cont-descrip{
+		padding: 6rem 7rem;
+		font-size: 16px;
+	}
+	.cont-descrip h2{
+		font-size: 28px;
+	}
+	.contenido-up h3{
+		font-size: 24px;
+	}
+	.aumento{
+		font-size: 20px;
+	}
+}
+
+@include desktop{
+	.cont-descrip{
+		padding: 6rem 9rem;
+		font-size: 18px;
+	}
+	.cont-descrip h2{
+		font-size: 30px;
+	}
+	.contenido-up h3{
+		font-size: 26px;
+	}
+	.aumento{
+		font-size: 22px;
+	}
+} 
+
+@include large-desktop{
+	.cont-descrip{
+		padding: 6rem 11rem;
+		font-size: 20px;
+	}
+	.cont-descrip h2{
+		font-size: 32px;
+	}
+	.contenido-up h3{
+		font-size: 28px;
+	}
+	.aumento{
+		font-size: 24px;
+	}
+	.galeria img{
+		margin-top: 1em;
+	}
+} 

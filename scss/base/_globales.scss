@@ -1,0 +1,79 @@
+/* Globales */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Fuentes*/
+@each $fuente in typeOs, semibold{
+    .#{$fuente}{
+        font-family: $fuente_secundaria;
+        @if $fuente == typeOs{
+            font-weight: $regular;
+        }@else{
+            font-weight: $semiBold;
+        }
+    }
+}
+
+@each $fuente in typeR, typeBlack, typeBold{
+    .#{$fuente}{
+        font-family: $fuente_principal;
+        @if $fuente == typeR{
+            font-weight: $medium;
+        }@else if $fuente == typeBlack{
+            font-weight: $bold;
+        }@else{
+            font-weight: $black;
+        }
+    }
+}
+
+/*Paleta de colores*/
+@each $color in colorWhite, colorYellow, colorRed, colorBlack{
+    .#{$color}{
+        @if $color == colorWhite{
+            color: $blanco;
+        }
+        @else if $color == colorYellow{
+            color: $amarillo;
+        }@else if $color == colorRed{
+            color: $rojo;
+        }@else{
+            color: $negro;
+        }
+    }
+}
+
+@each $bgColor in bgColorYellow, bgColorRed, bgColorBlue, bgColorBlack{
+    .#{$bgColor}{
+        @if $bgColor == bgColorYellow{
+            background: $amarillo;
+        }
+        @else if $bgColor == bgColorRed{
+            background: $rojo;
+        }@else if $bgColor == bgColorBlue{
+            background: $azul;
+        }@else{
+            background: $negro;
+        }
+    }
+}
+
+h1, h2{
+    text-align: center;
+}
+
+p{
+    font-family: $fuente_secundaria;
+	font-weight: $regular;
+	line-height: 200%;
+	text-align: justify;
+}
+
+a{
+    font-family: $fuente_secundaria;
+	font-weight: $bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}

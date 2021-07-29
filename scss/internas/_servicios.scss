@@ -1,0 +1,102 @@
+/*Servicios*/
+
+@include smartphones{
+	.servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4em 3rem;
+        font-size: 12px;
+        overflow: hidden;
+    }
+    .servicios h2{
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    .servicio1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2em 0;
+    }
+    .servicio1 h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .servicio1 img{
+        width: 100%;
+        height: 210px;
+        margin: 3em 0;
+    }
+    .serv-listado{
+        padding-left: 2rem;
+    }
+    .serv-list{
+        padding-left: 2rem;
+    }
+}
+
+@include movil{
+	.servicios{
+        margin: 4em 5rem;
+        font-size: 14px;
+    }
+    .servicios h2{
+        font-size: 26px;
+    }
+    .servicio1 h3{
+        font-size: 22px;
+    }
+    .servicio1 img{
+        height: 300px;
+    }
+}
+
+
+@include tablet{
+	.servicios{
+        font-size: 16px;
+        margin: 4em 8rem;
+    }
+    .servicios h2{
+        font-size: 28px;
+    }
+    .servicio1 h3{
+        font-size: 24px;
+    }
+    .servicio1 img{
+        height: 400px;
+    }
+}
+
+@include desktop{
+	.servicios{
+        font-size: 18px;
+    }
+    .servicios h2{
+        font-size: 30px;
+    }
+    .servicio1{
+        align-items: flex-start;
+    }
+    .servicio1 h3{
+        font-size: 26px;
+    }
+    .servicio1 img{
+        height: 600px;
+    }
+} 
+
+@include large-desktop{
+	.servicios{
+        font-size: 20px;
+    }
+    .servicios h2{
+        font-size: 32px;
+    }
+    .servicio1 h3{
+        font-size: 28px;
+    }
+}

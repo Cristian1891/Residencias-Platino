@@ -1,0 +1,84 @@
+/*Secciones*/
+
+/*Seccion principal*/
+
+@include smartphones{
+	.carousel-caption h1{
+		font-size: 24px;
+	}
+	.carousel-caption p{
+		font-size: 13px;
+		text-align: center;
+	}
+    #seccion-principal{
+		overflow: hidden;
+	}
+	.carousel-caption h1{
+		text-align: center;
+	}
+	.carousel-caption {
+		position: absolute;
+		right: 5%;
+		bottom: 40%;
+		left: 5%;
+		top: 20%;
+		z-index: 10;
+		text-align: center;
+	}
+}
+
+@include movil{
+	.carousel-caption h1{
+		font-size: 28px;
+	}
+	.carousel-caption p{
+		font-size: 16px;
+	}
+    .carousel-caption {
+		top: 35%;
+	}
+}
+
+
+@include tablet{
+	.carousel-caption h1{
+		font-size: 32px;
+	}
+	.carousel-caption p{
+		font-size: 19px;
+	}
+    .carousel-caption {
+		top: 45%;	
+	}
+}
+
+@include desktop{
+	.carousel-caption h1{
+		font-size: 36px;
+	}
+	.carousel-caption p{
+		font-size: 22px;
+	}
+    .carousel-caption {
+		right: 10%;
+		bottom: 40%;
+		left: 10%;
+		top: 40%;
+	}
+} 
+
+@include large-desktop{
+	.carousel-caption h1{
+		font-size: 40px;
+	}
+	.carousel-caption p{
+		font-size: 25px;
+	}
+	.carousel-caption {
+		right: 5%;
+		left: 5%;
+		top: 42%;
+		z-index: 10;
+	} 
+} 
+

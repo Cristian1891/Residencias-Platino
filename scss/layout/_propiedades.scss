@@ -1,0 +1,206 @@
+/*Propiedades*/
+
+@include smartphones{
+	.contProp{
+		padding: 3em 4rem;
+		background-image: url("../media/propie-fondo.jpg");
+		background-position: center center;
+		background-size: cover;
+		font-size: 12px;
+		overflow: hidden;
+	}
+	.contProp h2{
+		font-size: 24px;
+		padding-bottom: 1em;
+	}
+	.propiedad img{
+		width: 100%;
+		height: 250px;
+	}
+	.iconos{
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 1em 0 1em 0;
+	}
+	.iconos li img{
+		width: 40px;
+		height: 30px;
+	}
+	.iconos-down{
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 3rem 1em 3rem;
+	}
+	.iconos-down li img{
+		width: 40px;
+		height: 30px;
+	}
+	.secciones{
+		 list-style: none;
+		 text-align: center;
+		 padding: 2em 0;
+	}
+	.secciones li a{
+		text-decoration: none;
+	}
+	.secciones li{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem 2rem;
+	}
+	.ocultar{
+		display: none;
+	}
+	#casas{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 3em 0 4em 0;
+	}
+	#departamentos{
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 3em 0 4em 0;
+	}
+	#condominios{
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 3em 0 4em 0;
+	}
+	#locales{
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 3em 0 4em 0;
+	}
+	.propiedad{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		max-width: 340px;
+		flex: 0 0 calc(33.3% - 1rem);
+		border: 1px solid #ccc;
+		margin: 0 0 2rem 0;
+	}
+	.contenido-prop{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 1em 2rem 2em 2rem;
+		color: #FFFFFF;	
+	}
+	.ver-todas{
+		text-align: center;
+	}
+	.contenido-prop a{
+		text-align: center;
+		text-decoration: none;
+		color: #000000;
+	}
+	.boton1{
+		padding: 1rem 2rem;
+		display: inline-block;
+		text-align: center;
+		border: none;
+	}
+	.boton1:hover{
+		color: #FFFFFF;
+		background-color: #C00A0A;
+	}
+}
+
+@include movil{
+	.contProp{
+		font-size: 14px;
+	}
+	.contProp h2{
+		font-size: 26px;
+	}
+}
+
+
+@include tablet{
+	.contProp{
+		font-size: 16px;
+	}
+	.contProp h2{
+		font-size: 28px;
+	}
+	#casas{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#departamentos{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#condominios{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#locales{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+}
+
+@include desktop{
+	.contProp{
+		font-size: 18px;
+	}
+	.contProp h2{
+		font-size: 30px;
+	}
+	.propiedad img{
+		height: 300px;
+	}
+	.propiedad{
+		max-width: 400px;
+	}
+} 
+ 
+@include large-desktop{
+	.contProp{
+		font-size: 20px;
+	}
+	.contProp h2{
+		font-size: 32px;
+		padding-bottom: 1em;
+	}
+	#casas{
+		flex-wrap: no-wrap;
+		padding: 3em 0 4em 0;
+	}
+	#departamentos{
+		flex-wrap: no-wrap;
+		padding: 3em 0 4em 0;
+	}
+	#condominios{
+		flex-wrap: no-wrap;
+		padding: 3em 0 4em 0;
+	}
+	#locales{
+		flex-wrap: no-wrap;
+		padding: 3em 0 4em 0;
+	}
+	.secciones li{
+		display: inline;
+		padding: 0 2rem;
+	}
+	.propiedad{
+		margin: 0;
+	}	
+}
+
