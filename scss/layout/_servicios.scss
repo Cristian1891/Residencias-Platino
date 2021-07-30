@@ -1,7 +1,7 @@
 /*Servicios*/
 
 @include smartphones{
-	.cont-serv{
+	.cont-serv {
         font-size: 12px;
         padding: 5em 1rem 0 1rem;
         display: flex;
@@ -9,29 +9,29 @@
         justify-content: space-around;
         align-items: center;
         overflow: hidden;
+        h2 {
+            font-size: 24px;
+        }
     }
-    .cont-serv h2{
-        font-size: 24px;
-    }
-    #cont-general{
+    #cont-general {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    #cont-general1{
+    #cont-general1 {
         display: none;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
-    #cont-general2{
+    #cont-general2 {
         display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .contenido-serv{
+    .contenido-serv {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -40,8 +40,12 @@
         padding: 2em 3rem;
         max-width: 340px;
         margin-bottom: 2em;
+        h3 {
+            padding-bottom: 1em;
+            font-size: 20px;
+        }
     }
-    .contenido-serv1{
+    .contenido-serv1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -50,145 +54,155 @@
         padding: 2em 3rem;
         max-width: 340px;
         margin-bottom: 2em;
+        h3 {
+            padding-bottom: 1em;
+            font-size: 20px;
+        }
     }
-    .ocult-serv{
+    .ocult-serv {
         display: none;
     }
-    .contenido-serv h3{
-        padding-bottom: 1em;
-        font-size: 20px;
+    .cont-gener {
+        p {
+            margin: 2em 0 2em 0;
+        }
     }
-    .contenido-serv1 h3{
-        padding-bottom: 1em;
-        font-size: 20px;
+    .serv-img {
+        img {
+            width: 100%;
+            height: 200px;
+        }
     }
-    .cont-gener p{
-        margin: 2em 0 2em 0;
-    }
-    .serv-img img{
-        width: 100%;
-        height: 200px;
-    }
-    .slide{
+    .slide {
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 3em 0 5em 0;
-    }
+    }    
 }
 
 @include movil{
-	.cont-serv{
+	.cont-serv {
         font-size: 14px;
+        h2 {
+            font-size: 26px;
+        }
     }
-    .cont-serv h2{
-        font-size: 26px;
+    .contenido-serv {
+        h3 {
+            font-size: 22px;
+        }
     }
-    .contenido-serv h3{
-        font-size: 22px;
+    .contenido-serv1 {
+        h3 {
+            font-size: 22px;
+        }
     }
-    .contenido-serv1 h3{
-        font-size: 22px;
-    }
-    .serv-img img{
-        width: 100%;
-        height: 200px;
+    .serv-img {
+        img {
+            width: 100%;
+            height: 200px;
+        }
     }
 }
 
-
 @include tablet{
-	.cont-serv{
+	.cont-serv {
         font-size: 16px;
+        h2 {
+            font-size: 28px;
+        }
     }
-    .cont-serv h2{
-        font-size: 28px;
-    }
-    #cont-general{
+    #cont-general {
         flex-direction: row;
         align-items: stretch;
     }
-    #cont-general1{
+    #cont-general1 {
         flex-direction: row;
         align-items: stretch;
     }
-    .contenido-serv{
+    .contenido-serv {
         justify-content: flex-start;
         margin-bottom: 0;
         max-width: 550px;
+        h3 {
+            font-size: 24px;
+        }
     }
-    .contenido-serv1{
+    .contenido-serv1 {
         margin-bottom: 0;
         max-width: 550px;
+        h3 {
+            font-size: 24px;
+        }
     }
-    .contenido-serv h3{
-        font-size: 24px;
-    }
-    .contenido-serv1 h3{
-        font-size: 24px;
-    }
-    .serv-img img{
-        width: 100%;
-        height: 200px;
-    }
+    .serv-img {
+        img {
+            width: 100%;
+            height: 200px;
+        }
+    }    
 }
-
 @include desktop{
-	.cont-serv{
+	.cont-serv {
         font-size: 18px;
+        h2 {
+            font-size: 30px;
+        }
     }
-    .cont-serv h2{
-        font-size: 30px;
-    }
-    .contenido-serv{
+    .contenido-serv {
         justify-content: space-evenly;
         max-width: 600px;
+        h3 {
+            font-size: 26px;
+        }
     }
-    .contenido-serv1{
+    .contenido-serv1 {
         max-width: 600px;
+        h3 {
+            font-size: 26px;
+        }
     }
-    .contenido-serv h3{
-        font-size: 26px;
-    }
-    .contenido-serv1 h3{
-        font-size: 26px;
-    }
-    .serv-img img{
-        width: 100%;
-        height: 300px;
-    }
+    .serv-img {
+        img {
+            width: 100%;
+            height: 300px;
+        }
+    }    
 } 
 
 @include large-desktop{
-	.cont-serv{
+	.cont-serv {
         font-size: 20px;
+        h2 {
+            font-size: 32px;
+        }
     }
-    .cont-serv h2{
-        font-size: 32px;
-    }
-    #cont-general{
+    #cont-general {
         flex-direction: row;
         align-items: stretch;
     }
-    #cont-general1{
+    #cont-general1 {
         flex-direction: row;
         align-items: stretch;
     }
-    .contenido-serv{
+    .contenido-serv {
         max-width: 600px;
+        h3 {
+            font-size: 28px;
+        }
     }
-    .contenido-serv1{
+    .contenido-serv1 {
         max-width: 600px;
+        h3 {
+            font-size: 28px;
+        }
     }
-    .contenido-serv h3{
-        font-size: 28px;
-    }
-    .contenido-serv1 h3{
-        font-size: 28px;
-    }
-    .serv-img img{
-        width: 100%;
-        height: 300px;
+    .serv-img {
+        img {
+            width: 100%;
+            height: 300px;
+        }
     }
 }

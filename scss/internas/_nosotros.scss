@@ -3,96 +3,104 @@
 /*Nosotros*/
 
 @include smartphones{
-	.nosotros{
+	.nosotros {
 		overflow: hidden;
 	}
-	.cont-nosotr{
+	.cont-nosotr {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 		font-size: 12px;
 		margin: 4em 3rem;
+		h2 {
+			text-transform: uppercase;
+			font-size: 24px;
+		}
 	}
-	.cont-nosotr h2{
-		text-transform: uppercase;
-		font-size: 24px;
-	}
-	.parte1{
+	.parte1 {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: flex-start;
+		h4 {
+			margin: 1em 0;
+			font-size: 16px;
+		}
+		iframe {
+			margin: 2em 0;
+			height: 200px;
+		}
 	}
 	.list-nos {
 		padding-left: 3rem;
 		padding-bottom: 1em;
-	}
-	.parte1 h4{
-		margin: 1em 0;
-		font-size: 16px;
-	}
-	.parte1 iframe{
-		margin: 2em 0;
-		height: 200px;
-	}
+	}	
 }
 
 @include movil{
-	.cont-nosotr{
+	.cont-nosotr {
 		font-size: 14px;
 		margin: 4em 5rem;
+		h2 {
+			font-size: 26px;
+		}
 	}
-	.cont-nosotr h2{
-		font-size: 26px;
-	}
-	.parte1 h4{
-		font-size: 18px;
-	}
-	.parte1 iframe{
-		height: 300px;
+	.parte1 {
+		h4 {
+			font-size: 18px;
+		}
+		iframe {
+			height: 300px;
+		}
 	}
 }
 
 
 @include tablet{
-	.cont-nosotr{
+	.cont-nosotr {
 		font-size: 16px;
 		margin: 4em 7rem;
+		h2 {
+			font-size: 28px;
+		}
 	}
-	.cont-nosotr h2{
-		font-size: 28px;
-	}
-	.parte1 h4{
-		font-size: 20px;
-	}
-	.parte1 iframe{
-		height: 500px;
+	.parte1 {
+		h4 {
+			font-size: 20px;
+		}
+		iframe {
+			height: 500px;
+		}
 	}
 }
 
 @include desktop{
-	.cont-nosotr{
+	.cont-nosotr {
 		font-size: 18px;
 		margin: 4em 9rem;
+		h2 {
+			font-size: 30px;
+		}
 	}
-	.cont-nosotr h2{
-		font-size: 30px;
-	}
-	.parte1 h4{
-		font-size: 22px;
+	.parte1 {
+		h4 {
+			font-size: 22px;
+		}
 	}
 } 
 
 @include large-desktop{
-	.cont-nosotr{
+	.cont-nosotr {
 		font-size: 20px;
 		margin: 4em 11rem;
+		h2 {
+			font-size: 32px;
+		}
 	}
-	.cont-nosotr h2{
-		font-size: 32px;
-	}
-	.parte1 h4{
-		font-size: 24px;
+	.parte1 {
+		h4 {
+			font-size: 24px;
+		}
 	}
 }

@@ -27,3 +27,29 @@
         @content;
     }
 }
+
+@mixin boton($bgColor, $display){
+    @if($bgColor == $amarillo){
+        padding: 1rem 2rem;
+        display: $display;
+        width: 100%;
+        text-align: center;
+        border: none;
+        &:hover{
+            background-color: #ffff00;
+            color: #000000;
+        }
+    }@else{
+        padding: 1rem 2rem;
+        display: inline-block;
+        text-align: center;
+        border: none;
+        outline: 5px solid #C00A0A;
+        &:hover{
+            color: #FFFFFF;
+		    background-color: #C00A0A;
+        }
+    }
+    
+}
+

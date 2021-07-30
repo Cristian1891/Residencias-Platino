@@ -118,54 +118,58 @@
 	padding-top: 18px;
 	background: rgba(19, 39, 57, 0.8);
 	transition: 0.4s;
-  }
-  
-  .mobile-nav * {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-  }
-  
-  .mobile-nav a {
-	display: block;
-	position: relative;
-	color: #fff;
-	padding: 10px 20px;
-	font-weight: 500;
-  }
-  
-  .mobile-nav a:hover,
-  .mobile-nav li:hover > a {
-	color: $amarillo;
-	text-decoration: none;
-  }
-  
-  .mobile-nav .drop-down > a:after {
-	content: "\f078";
-	font-family: FontAwesome;
-	padding-left: 10px;
-	position: absolute;
-	right: 15px;
-  }
-  
-  .mobile-nav .active.drop-down > a:after {
-	content: "\f077";
-  }
-  
-  .mobile-nav .drop-down > a {
-	padding-right: 35px;
-  }
-  
-  .mobile-nav .drop-down ul {
-	display: none;
-	overflow: hidden;
-  }
-  
-  .mobile-nav .drop-down li {
-	padding-left: 20px;
-  }
-  
-  .mobile-nav-toggle {
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a {
+		display: block;
+		position: relative;
+		color: #fff;
+		padding: 10px 20px;
+		font-weight: 500;
+		&:hover {
+			color: $amarillo;
+			text-decoration: none;
+		}
+	}
+	li {
+		&:hover {
+			>a {
+				color: $amarillo;
+				text-decoration: none;
+			}
+		}
+	}
+	.drop-down {
+		>a {
+			&:after {
+				content: "\f078";
+				font-family: FontAwesome;
+				padding-left: 10px;
+				position: absolute;
+				right: 15px;
+			}
+			padding-right: 35px;
+		}
+		ul {
+			display: none;
+			overflow: hidden;
+		}
+		li {
+			padding-left: 20px;
+		}
+	}
+	.active.drop-down {
+		>a {
+			&:after {
+				content: "\f077";
+			}
+		}
+	}
+}
+.mobile-nav-toggle {
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -178,18 +182,16 @@
 	line-height: 1;
 	cursor: pointer;
 	text-align: right;
-  }
-  
-  .mobile-nav-toggle i {
-	margin: 38px 35px 0 0;
-	color: $blanco;
-  }
+	i {
+		margin: 38px 35px 0 0;
+		color: #FFFFFF;
+		&:hover {
+			color: $amarillo;
+		}
+	}
+}
 
-  .mobile-nav-toggle i:hover {
-	color: $amarillo;
-  }
-  
-  .mobile-nav-overly {
+.mobile-nav-overly {
 	width: 100%;
 	height: 100%;
 	z-index: 9997;
@@ -199,19 +201,18 @@
 	background: rgba(19, 39, 57, 0.8);
 	overflow: hidden;
 	display: none;
-  }
-  
-  .mobile-nav-active {
+}
+.mobile-nav-active {
 	overflow: hidden;
-  }
-  
-  .mobile-nav-active .mobile-nav {
-	left: 0;
-  }
-  
-  .mobile-nav-active .mobile-nav-toggle i {
-	color: #fff;
-  }
+	.mobile-nav {
+		left: 0;
+	}
+	.mobile-nav-toggle {
+		i {
+			color: $blanco;
+		}
+	}
+}
   
 
 

@@ -1,167 +1,175 @@
 /*Propiedades*/
 
 @include smartphones{
-    .casa-cont{
+    .casa-cont {
         overflow: hidden;
         font-size: 12px;
         padding: 5em 4rem;
+        h2 {
+            padding: 2em 0;
+            font-size: 26px;
+        }
     }
-    #casa-propiet{
+    #casa-propiet {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: stretch;
     }
-    #depto-propiet{
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch; 
-    }
-    #cond-propiet{
+    #depto-propiet {
         display: none;
         flex-direction: column;
         justify-content: space-between;
         align-items: stretch;
     }
-    #local-propiet{
+    #cond-propiet {
         display: none;
         flex-direction: column;
         justify-content: space-between;
         align-items: stretch;
     }
-    .casa-cont h2{
-        padding: 2em 0;
-        font-size: 26px;
+    #local-propiet {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
     }
-    .nav-prop li a{
-        color: #000000;
+    .nav-prop {
+        li {
+            a {
+                color: #000000;
+            }
+        }
     }
-    .propiet{
+    .propiet {
         height: 220px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
-    .propiet img{
-        width: 100%;
-        height: 100%;
-    }
-    .contenido-propiet{
+    .contenido-propiet {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: stretch;
         padding: 2rem 0;
+        p {
+            text-align: center;
+        }
     }
-    .contenido-propiet p{
-        text-align: center;
-    }
-    .iconos-propi{
+    .iconos-propi {
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        li {
+            img {
+                width: 40px;
+                height: 30px;
+            }
+        }
     }
-    .iconos-propi li img{
-        width: 40px;
-        height: 30px;
-    }
-    .seccionesRes{
+    .seccionesRes {
         list-style: none;
         text-align: center;
         padding: 2em 0;
+        li {
+            a {
+                text-decoration: none;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
     }
-    .seccionesRes li a{
-       text-decoration: none;
-    }
-    .seccionesRes li{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       padding: 1rem 2rem;
-    }
-    .ocult-propiedad{
+    .ocult-propiedad {
         display: none;
-    } 
+    }    
 }
 
 @include movil{
-	.casa-cont{
+	.casa-cont {
         font-size: 14px;
         padding: 5em 6rem;
+        h2 {
+            font-size: 26px;
+        }
     }
-    .casa-cont h2{
-        font-size: 26px;
-    }
-    .propiet{
+    .propiet {
         height: 380px;
     }
 }
 
 
 @include tablet{
-	.casa-cont{
+	.casa-cont {
         font-size: 16px;
         padding: 5em 8rem;
+        h2 {
+            font-size: 28px;
+        }
     }
-    .casa-cont h2{
-        font-size: 28px;
-    }
-    .propiet{
+    .propiet {
         height: 450px;
     }
-    .iconos-propi{
+    .iconos-propi {
         flex-direction: row;
         align-items: stretch;
     }
 }
 
 @include desktop{
-	.casa-cont{
+	.casa-cont {
         font-size: 18px;
         padding: 5em 10rem;
+        h2 {
+            font-size: 30px;
+        }
     }
-    .casa-cont h2{
-        font-size: 30px;
-    }
-    .propiet{
+    .propiet {
         height: 490px;
     }
 } 
 
 @include large-desktop{
-	.casa-cont{
+	.casa-cont {
         font-size: 20px;
         padding: 4em 2rem;
+        h2 {
+            padding-bottom: 1em;
+            font-size: 32px;
+        }
     }
-    .casa-cont h2{
-        padding-bottom: 1em;
-        font-size: 32px;
-    }
-    .casilla{
+    .casilla {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         height: 400px;
         margin-top: 2em;
     }
-    .propiet{
+    .propiet {
         width: 550px;
+        img {
+            max-height: 360px;
+        }
     }
-    .propiet img{
-        max-height: 360px;
-    }
-    .contenido-propiet{
+    .contenido-propiet {
         justify-content: stretch;
         padding: 0;
         margin-left: 2rem;
         height: 100vh;
         width: 600px;
+        p {
+            text-align: start;
+        }
     }
-    .contenido-propiet p{
-        text-align: start;
+    .seccionesRes {
+        li {
+            display: inline;
+            padding: 0 2rem;
+        }
     }
-    .seccionesRes li{
-		display: inline;
-		padding: 0 2rem;
-	}
 }

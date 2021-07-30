@@ -1,0 +1,7 @@
+.boton{
+    @include boton($amarillo, inline-block);
+}
+
+.boton1{
+    @include boton($rojo, inline-block);
+}

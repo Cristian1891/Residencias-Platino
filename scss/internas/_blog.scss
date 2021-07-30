@@ -1,185 +1,200 @@
 /*Blog*/
 
 @include smartphones{
-	.pagBlog{
+	.pagBlog {
         overflow: hidden;
     }
-    .contBlogPag{
+    .contBlogPag {
         font-size: 12px;
         margin: 4em;
+        h2 {
+            text-transform: uppercase;
+            margin: 2em 0;
+            font-size: 24px;
+        }
     }
-    .contBlogPag h2{
-        text-transform: uppercase;
-        margin: 2em 0;
-        font-size: 24px;
-    }
-    .blogPag{
+    .blogPag {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        
+        h3 {
+            margin: 1em 0;
+            padding-bottom: 1em;
+            border-bottom: 3px solid #FF0000;
+            width: 100%;
+            font-size: 20px;
+        }
+        h4 {
+            margin-top: 2em;
+            font-size: 16px;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            margin: 2em 0;
+        }
     }
-    .blogPag h3{
-        margin: 1em 0;
-        padding-bottom: 1em;
-        border-bottom: 3px solid #FF0000;
-        width: 100%;
-        font-size: 20px;
-    }
-    .blogPag h4{
-        margin-top: 2em;
-        font-size: 16px;
-    }
-    .blogPag img{
-        width: 100%;
-        height: 200px;
-        margin: 2em 0;
-    }
-    .blog-list{
+    .blog-list {
         padding-left: 1.5rem;
     }
-    .borde{
+    .borde {
         margin: 1em 0;
         padding-bottom: 1em;
         border-bottom: 1px solid #FF0000;
     }
-    .espaciob{
+    .espaciob {
         margin-top: 2em;
     }
-    .blogPag1{
+    .blogPag1 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-    }
-    .blogPag1 h3{
-        margin: 1em 0;
-        padding-bottom: 1em;
-        border-bottom: 3px solid #FF0000;
-        width: 100%;
-        font-size: 20px;
-    }
-    .blogPag1 img{
-        width: 100%;
-        height: 200px;
-        margin: 2em 0;
-    }
-    .blogPag1 h4{
-        font-size: 16px;
-        margin-top: 2em;
+        h3 {
+            margin: 1em 0;
+            padding-bottom: 1em;
+            border-bottom: 3px solid #FF0000;
+            width: 100%;
+            font-size: 20px;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            margin: 2em 0;
+        }
+        h4 {
+            font-size: 16px;
+            margin-top: 2em;
+        }
     }
 }
 
 @include movil{
-    .contBlogPag{
+    .contBlogPag {
         font-size: 14px;
         margin: 4em 5rem;
+        h2 {
+            font-size: 26px;
+        }
     }
-    .contBlogPag h2{
-        font-size: 26px;
+    .blogPag {
+        h3 {
+            font-size: 22px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        img {
+            height: 350px;
+        }
     }
-    .blogPag h3{
-        font-size: 22px;
-    }
-    .blogPag h4{
-        font-size: 18px;
-    }
-    .blogPag img{
-        height: 350px;
-    }
-    .blogPag1 h3{
-        font-size: 22px;
-    }
-    .blogPag1 img{
-        height: 350px;
-    }
-    .blogPag1 h4{
-        font-size: 18px;
-    }
+    .blogPag1 {
+        h3 {
+            font-size: 22px;
+        }
+        img {
+            height: 350px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+    }    
 }
 
 
 @include tablet{
-    .contBlogPag{
+    .contBlogPag {
         font-size: 16px;
         margin: 4em 6rem;
+        h2 {
+            font-size: 28px;
+        }
     }
-    .contBlogPag h2{
-        font-size: 28px;
+    .blogPag {
+        h3 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        img {
+            height: 450px;
+        }
     }
-    .blogPag h3{
-        font-size: 24px;
-    }
-    .blogPag h4{
-        font-size: 20px;
-    }
-    .blogPag img{
-        height: 450px;
-    }
-    .blogPag1 h3{
-        font-size: 24px;
-    }
-    .blogPag1 img{
-        height: 450px;
-    }
-    .blogPag1 h4{
-        font-size: 20px;
-    }
+    .blogPag1 {
+        h3 {
+            font-size: 24px;
+        }
+        img {
+            height: 450px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+    }    
 }
 
 @include desktop{
-    .contBlogPag{
+    .contBlogPag {
         font-size: 18px;
         margin: 4em 8rem;
+        h2 {
+            font-size: 30px;
+        }
     }
-    .contBlogPag h2{
-        font-size: 30px;
+    .blogPag {
+        h3 {
+            font-size: 26px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+        img {
+            height: 600px;
+        }
     }
-    .blogPag h3{
-        font-size: 26px;
-    }
-    .blogPag h4{
-        font-size: 22px;
-    }
-    .blogPag img{
-        height: 600px;
-    }
-    .blogPag1 h3{
-        font-size: 26px;
-    }
-    .blogPag1 img{
-        height: 600px;
-    }
-    .blogPag1 h4{
-        font-size: 22px;
-    }
+    .blogPag1 {
+        h3 {
+            font-size: 26px;
+        }
+        img {
+            height: 600px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+    }    
 } 
 
 @include large-desktop{
-    .contBlogPag h2{
-        font-size: 32px;
-    }
-    .contBlogPag{
+    .contBlogPag {
+        h2 {
+            font-size: 32px;
+        }
         font-size: 20px;
         margin: 4em 8rem;
     }
-    .blogPag h3{
-        font-size: 28px;
+    .blogPag {
+        h3 {
+            font-size: 28px;
+        }
+        h4 {
+            font-size: 24px;
+        }
+        img {
+            height: 700px;
+        }
     }
-    .blogPag h4{
-        font-size: 24px;
-    }
-    .blogPag img{
-        height: 700px;
-    }
-    .blogPag1 h3{
-        font-size: 28px;
-    }
-    .blogPag1 img{
-        height: 700px;
-    }
-    .blogPag1 h4{
-        font-size: 24px;
-    }
+    .blogPag1 {
+        h3 {
+            font-size: 28px;
+        }
+        img {
+            height: 700px;
+        }
+        h4 {
+            font-size: 24px;
+        }
+    }    
 }

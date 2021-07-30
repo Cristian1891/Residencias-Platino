@@ -1,110 +1,122 @@
 /*Footer*/
+
 @include smartphones{
-	.contFoot{
+	.contFoot {
 		font-size: 12px;
 		text-align: center;
 	}
-	.arriba{
+	.arriba {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 4rem;
+		h3 {
+			font-size: 20px;
+		}
 	}
-	.arriba h3{
-		font-size: 20px;
+	.cont-info {
+		p {
+			text-align: center;
+		}
 	}
-	.cont-info p{
-		text-align: center;
-	}
-	.cont-apps{
+	.cont-apps {
 		padding: 2rem 0;
 	}
-	.orden-pri{
+	.orden-pri {
 		list-style-type: none;
 	}
-	.orden-seg{
+	.orden-seg {
 		list-style-type: none;
+		li {
+			img {
+				width: 150px;
+				height: 80px;
+			}
+		}
 	}
-	.orden-seg li img{
-		width: 150px;
-		height: 80px;
-	}
-	.orden-ter{
+	.orden-ter {
 		list-style-type: none;
 		padding-top: 1em;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		li {
+			img {
+				max-width: 100px;
+				max-height: 50px;
+			}
+		}
 	}
-	.orden-ter li img{
-		max-width: 100px;
-		max-height: 50px; 
-	}
-	.cont-final{
+	.cont-final {
 		padding: 3rem 0;
 		text-align: center;
-	}
-	.cont-final p{
-		display: inline;
-		text-align: center;
+		p {
+			display: inline;
+			text-align: center;
+		}
 	}
 }
 
 @include movil{
-	.contFoot{
+	.contFoot {
 		font-size: 14px;
 	}
-	.arriba h3{
-		font-size: 22px;
-	}
+	.arriba {
+		h3 {
+			font-size: 22px;
+		}
+	}	
 }
 
-
 @include tablet{
-	.contFoot{
+	.contFoot {
 		font-size: 16px;
 	}
-	.arriba h3{
-		font-size: 24px;
+	.arriba {
+		h3 {
+			font-size: 24px;
+		}
 	}
 }
 
 @include desktop{
-	.contFoot{
+	.contFoot {
 		font-size: 18px;
 	}
-	.arriba{
+	.arriba {
 		flex-direction: row;
 		align-items: flex-start;
 		padding: 4rem 7rem 0 7rem;
+		h3 {
+			font-size: 26px;
+		}
 	}
-	.cont-apps{
+	.cont-apps {
 		padding: 0;
+		h3 {
+			text-align: center;
+		}
 	}
-	.cont-info{
+	.cont-info {
 		text-align: start;
+		p {
+			text-align: start;
+		}
 	}
-	.cont-info p{
-		text-align: start;
-	}
-	.cont-apps h3{
-		text-align: center;
-	}
-	.arriba h3{
-		font-size: 26px;
-	}
-	.cont-redes{
+	.cont-redes {
 		text-align: center;
 		padding-left: 4rem;
 	}
 } 
 
 @include large-desktop{
-	.contFoot{
+	.contFoot {
 		font-size: 20px;
 	}
-	.arriba h3{
-		font-size: 28px;
-	}
+	.arriba {
+		h3 {
+			font-size: 28px;
+		}
+	}	
 }
