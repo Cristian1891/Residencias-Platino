@@ -20,8 +20,8 @@
 			text-align: center;
 		}
 	}
-	.cont-apps {
-		padding: 2rem 0;
+	.cont-nosot {
+		margin: 2em 8rem;
 	}
 	.orden-pri {
 		list-style-type: none;
@@ -29,9 +29,8 @@
 	.orden-seg {
 		list-style-type: none;
 		li {
-			img {
-				width: 150px;
-				height: 80px;
+			p {
+				text-align: center;
 			}
 		}
 	}
@@ -42,9 +41,11 @@
 		flex-direction: row;
 		justify-content: space-between;
 		li {
-			img {
-				max-width: 100px;
-				max-height: 50px;
+			a {
+				color: $blanco;
+				&:hover{
+					color: $amarillo;
+				}
 			}
 		}
 	}
@@ -92,8 +93,8 @@
 			font-size: 26px;
 		}
 	}
-	.cont-apps {
-		padding: 0;
+	.cont-nosot {
+		margin: 0 12rem 0 6rem;
 		h3 {
 			text-align: center;
 		}
@@ -106,13 +107,16 @@
 	}
 	.cont-redes {
 		text-align: center;
-		padding-left: 4rem;
+		padding-right: 3rem;
 	}
 } 
 
 @include large-desktop{
 	.contFoot {
 		font-size: 20px;
+	}
+	.cont-nosot {
+		margin: 0 12rem 0 6rem;
 	}
 	.arriba {
 		h3 {

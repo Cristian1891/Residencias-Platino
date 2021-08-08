@@ -2535,8 +2535,8 @@ a {
   .cont-info p {
     text-align: center;
   }
-  .cont-apps {
-    padding: 2rem 0;
+  .cont-nosot {
+    margin: 2em 8rem;
   }
   .orden-pri {
     list-style-type: none;
@@ -2544,9 +2544,8 @@ a {
   .orden-seg {
     list-style-type: none;
   }
-  .orden-seg li img {
-    width: 150px;
-    height: 80px;
+  .orden-seg li p {
+    text-align: center;
   }
   .orden-ter {
     list-style-type: none;
@@ -2562,9 +2561,11 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .orden-ter li img {
-    max-width: 100px;
-    max-height: 50px;
+  .orden-ter li a {
+    color: #FFFFFF;
+  }
+  .orden-ter li a:hover {
+    color: #FACE7F;
   }
   .cont-final {
     padding: 3rem 0;
@@ -2611,10 +2612,10 @@ a {
   .arriba h3 {
     font-size: 26px;
   }
-  .cont-apps {
-    padding: 0;
+  .cont-nosot {
+    margin: 0 12rem 0 6rem;
   }
-  .cont-apps h3 {
+  .cont-nosot h3 {
     text-align: center;
   }
   .cont-info {
@@ -2625,13 +2626,16 @@ a {
   }
   .cont-redes {
     text-align: center;
-    padding-left: 4rem;
+    padding-right: 3rem;
   }
 }
 
 @media (min-width: 1200px) {
   .contFoot {
     font-size: 20px;
+  }
+  .cont-nosot {
+    margin: 0 12rem 0 6rem;
   }
   .arriba h3 {
     font-size: 28px;
